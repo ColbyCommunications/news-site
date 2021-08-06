@@ -25,6 +25,9 @@ final class Modules_Manager {
 			'popup',
 			'motion-fx',
 			'usage',
+			'screenshots',
+			'compatibility-tag',
+			'license',
 
 			// Modules with Widgets.
 			'theme-builder',
@@ -34,6 +37,7 @@ final class Modules_Manager {
 			'slides',
 			'nav-menu',
 			'animated-headline',
+			'hotspot',
 			'pricing',
 			'flip-box',
 			'call-to-action',
@@ -50,6 +54,10 @@ final class Modules_Manager {
 			'sticky',
 			'wp-cli',
 			'lottie',
+			'code-highlight',
+			'custom-code',
+			'video-playlist',
+			'payments',
 		];
 
 		foreach ( $modules as $module_name ) {

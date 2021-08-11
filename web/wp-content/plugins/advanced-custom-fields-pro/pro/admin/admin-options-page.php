@@ -69,7 +69,7 @@ class acf_admin_options_page {
 			// child
 			} else {
 				
-				$slug = add_submenu_page( $page['parent_slug'], $page['page_title'], $page['menu_title'], $page['capability'], $page['menu_slug'], array($this, 'html') );
+				$slug = add_submenu_page( $page['parent_slug'], $page['page_title'], $page['menu_title'], $page['capability'], $page['menu_slug'], array($this, 'html'), $page['position'] );
 				
 			}
 			
@@ -190,9 +190,7 @@ class acf_admin_options_page {
 		
 		// notices
 		if( !empty($_GET['message']) && $_GET['message'] == '1' ) {
-		
-			acf_add_admin_notice( $this->page['updated_message'] );
-			
+			acf_add_admin_notice( $this->page['updated_message'], 'success' );
 		}
 		
 		
@@ -202,8 +200,8 @@ class acf_admin_options_page {
 		
 		
 		if( empty($field_groups) ) {
-		
-			acf_add_admin_notice( sprintf( __('No Custom Field Groups found for this options page. <a href="%s">Create a Custom Field Group</a>', 'acf'), admin_url() . 'post-new.php?post_type=acf-field-group' ), 'error');
+			
+			acf_add_admin_notice( sprintf( __('No Custom Field Groups found for this options page. <a href="%s">Create a Custom Field Group</a>', 'acf'), admin_url('post-new.php?post_type=acf-field-group') ), 'warning' );
 		
 		} else {
 			
@@ -234,7 +232,7 @@ class acf_admin_options_page {
 				
 				
 				// add meta box
-				add_meta_box( $id, $title, array($this, 'postbox_acf'), 'acf_options_page', $context, $priority, $args );
+				add_meta_box( $id, acf_esc_html( $title ), array($this, 'postbox_acf'), 'acf_options_page', $context, $priority, $args );
 				
 				
 			}

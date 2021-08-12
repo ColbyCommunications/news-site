@@ -42,6 +42,10 @@
 !/web/wp-content/plugins/jet-style-manager
 !/web/wp-content/plugins/jet-theme-core
 
+# WP All Import
+!/web/wp-content/plugins/wp-all-import-pro
+!/web/wp-content/plugins/wpai-acf-add-on
+
 # baseinstall
 !/web/wp-content/themes/baseinstall
 

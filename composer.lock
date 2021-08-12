@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c50c48c1a5bdcf8afaf28417fde500c",
+    "content-hash": "454dec1ad2b06c2574028555daf00365",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -3122,6 +3122,24 @@
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
+            "name": "wpackagist-plugin/wp-cfm",
+            "version": "1.7.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-cfm/",
+                "reference": "tags/1.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-cfm.1.7.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-cfm/"
+        },
+        {
             "name": "wpackagist-plugin/wp-nested-pages",
             "version": "3.1.15",
             "source": {
@@ -3206,5 +3224,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }

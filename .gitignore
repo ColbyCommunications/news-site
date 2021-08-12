@@ -16,6 +16,8 @@
 /web/wp-content/mu-plugins/*
 !/web/wp-content/mu-plugins/index.php
 !/web/wp-content/mu-plugins/README.md
+!/web/wp-content/mu-plugins/advanced-custom-fields-pro
+!/web/wp-content/mu-plugins/advanced-custom-fields-pro.php
 /web/wp-content/uploads/*
 !/web/wp-content/uploads/index.php
 /web/wp-content/upgrade/*
@@ -25,7 +27,6 @@
 !/web/wp-content/plugins/gravity-forms-add-menu-link
 !/web/wp-content/plugins/gravityforms
 !/web/wp-content/plugins/elementor-pro
-!/web/wp-content/plugins/advanced-custom-fields-pro
 !/web/wp-content/plugins/gravityformsauthorizenet
 !/web/wp-content/plugins/gravityformssurvey
 !/web/wp-content/plugins/colbyTicket.php

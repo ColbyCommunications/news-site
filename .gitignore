@@ -16,8 +16,7 @@
 /web/wp-content/mu-plugins/*
 !/web/wp-content/mu-plugins/index.php
 !/web/wp-content/mu-plugins/README.md
-!/web/wp-content/mu-plugins/advanced-custom-fields-pro
-!/web/wp-content/mu-plugins/advanced-custom-fields-pro.php
+!/web/wp-content/plugins/advanced-custom-fields-pro
 /web/wp-content/uploads/*
 !/web/wp-content/uploads/index.php
 /web/wp-content/upgrade/*

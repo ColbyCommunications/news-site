@@ -35,7 +35,8 @@
         "wpackagist-plugin/query-monitor": "^3.7",
         "wpackagist-plugin/regenerate-thumbnails": "^3.1",
         "wpackagist-plugin/svg-support": "^2.3",
-        "newcity/newcity-wp-wysiwyg": "^0.2.4"
+        "newcity/newcity-wp-wysiwyg": "^0.2.4",
+        "wpackagist-plugin/wp-cfm": "^1.7"
     },
     "authors": [
         {

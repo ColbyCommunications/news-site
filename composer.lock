@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c50c48c1a5bdcf8afaf28417fde500c",
+    "content-hash": "454dec1ad2b06c2574028555daf00365",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -272,7 +272,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "52e619389486174ce491ea3c5374f99cbd1964fd"
+                "reference": "eae2ef341ab1280f2ce2e5a99542a927baca768d"
             },
             "require": {
                 "masterminds/html5": "^2.7",
@@ -295,7 +295,7 @@
                     "composer run-script post-update-cmd"
                 ]
             },
-            "time": "2021-08-12T13:58:51+00:00"
+            "time": "2021-08-12T14:59:41+00:00"
         },
         {
             "name": "composer/installers",
@@ -3120,6 +3120,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-cfm",
+            "version": "1.7.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-cfm/",
+                "reference": "tags/1.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-cfm.1.7.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-cfm/"
         },
         {
             "name": "wpackagist-plugin/wp-nested-pages",

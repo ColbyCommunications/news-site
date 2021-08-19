@@ -4,7 +4,6 @@
     "type": "project",
     "require": {
         "ahebrank/wp-frontback": "dev-master",
-        "colbycommunications/colby-base-theme": "dev-master",
         "colbycommunications/colby-groups": "dev-wp4-test",
         "colbycommunications/colby-news-theme": "dev-newcity",
         "devgeniem/wp-redis-object-cache-dropin": "^1.6",

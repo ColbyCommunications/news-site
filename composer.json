@@ -7,7 +7,7 @@
         "colbycommunications/colby-groups": "dev-wp4-test",
         "colbycommunications/colby-news-theme": "dev-newcity",
         "devgeniem/wp-redis-object-cache-dropin": "^1.6",
-        "johnpbloch/wordpress-core": "^5.1.1",
+        "johnpbloch/wordpress-core": "^5.8",
         "johnpbloch/wordpress-core-installer": "^2.0",
         "newcity/newcity-wp-wysiwyg": "^0.2.4",
         "pristas-peter/wp-graphql-gutenberg": "^0.3.4",

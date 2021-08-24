@@ -189,7 +189,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "61324541c781dcc331e359505afff68fdf79d7a4"
+                "reference": "64356d74372c950e185dad7e8d0bfd354689ae4e"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -213,7 +213,7 @@
                     "composer run-script post-update-cmd"
                 ]
             },
-            "time": "2021-08-22T22:55:04+00:00"
+            "time": "2021-08-23T22:16:40+00:00"
         },
         {
             "name": "composer/installers",

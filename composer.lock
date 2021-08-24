@@ -20,14 +20,9 @@
                 "reference": "04dfd5d7de11956c219eb1163095e1088a3284b4",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Frontback issue reporting widget integration",
-            "support": {
-                "issues": "https://github.com/ahebrank/wp-frontback/issues",
-                "source": "https://github.com/ahebrank/wp-frontback/tree/master"
-            },
             "time": "2021-05-03T16:46:48+00:00"
         },
         {
@@ -189,7 +184,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "64356d74372c950e185dad7e8d0bfd354689ae4e"
+                "reference": "82e458f71c107960caf27ed0a4f877869b09e3f8"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -213,7 +208,7 @@
                     "composer run-script post-update-cmd"
                 ]
             },
-            "time": "2021-08-23T22:16:40+00:00"
+            "time": "2021-08-24T13:08:22+00:00"
         },
         {
             "name": "composer/installers",
@@ -2656,5 +2651,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "1.1.0"
 }

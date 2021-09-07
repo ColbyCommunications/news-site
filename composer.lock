@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfc991b96a76abe3b8530ec8290a65f3",
+    "content-hash": "dbbfdab93dfb6ef7fe0bb004a660e17b",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",
@@ -184,7 +184,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "a33ee42c6553e714241298056d83d1473b2f8690"
+                "reference": "4b4cefedc1d2184f12cd453e650a85a354f387ea"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -208,7 +208,7 @@
                     "composer run-script post-update-cmd"
                 ]
             },
-            "time": "2021-09-07T14:37:21+00:00"
+            "time": "2021-09-07T17:32:52+00:00"
         },
         {
             "name": "composer/installers",
@@ -2669,5 +2669,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }

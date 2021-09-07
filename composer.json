@@ -15,6 +15,7 @@
         "wpackagist-plugin/acf-autosize": "^2.0",
         "wpackagist-plugin/acf-extended": "0.8.8.4",
         "wpackagist-plugin/admin-bar-in-fullscreen-mode": "^1.0",
+        "wpackagist-plugin/block-manager": "^1.2",
         "wpackagist-plugin/cache-control": "^2.2.3",
         "wpackagist-plugin/capability-manager-enhanced": "^2.0",
         "wpackagist-plugin/classic-editor": "^1.4",

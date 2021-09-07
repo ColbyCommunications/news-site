@@ -61,6 +61,9 @@
 /*.env
 !example.lando.env
 
+# Ignore personal VSCode settings
+/.vscode/settings.json
+
 # Ignore custom NPM package dir.
 /npm-packages
 

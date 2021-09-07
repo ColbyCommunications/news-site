@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1179f00ff6376c01ca97b3d2f771ab18",
+    "content-hash": "dfc991b96a76abe3b8530ec8290a65f3",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",
@@ -2243,6 +2243,24 @@
             "homepage": "https://wordpress.org/plugins/admin-bar-in-fullscreen-mode/"
         },
         {
+            "name": "wpackagist-plugin/block-manager",
+            "version": "1.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/block-manager/",
+                "reference": "tags/1.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/block-manager.1.2.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/block-manager/"
+        },
+        {
             "name": "wpackagist-plugin/cache-control",
             "version": "2.2.5",
             "source": {
@@ -2651,5 +2669,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "1.1.0"
 }

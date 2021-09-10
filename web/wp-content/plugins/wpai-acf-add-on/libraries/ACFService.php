@@ -181,7 +181,7 @@ final class ACFService{
             }
 
             $downloadFiles = "no";
-            $fileName = $img_url;
+            $fileName = basename($img_url);
         }
 
         return PMXI_API::upload_image($pid, $img_url, $downloadFiles, $logger, true, $fileName, 'images', $search_in_gallery, $importData['articleData'], $importData);
@@ -223,7 +223,7 @@ final class ACFService{
             }
 
             $downloadFiles = "no";
-            $fileName = $atch_url;
+            $fileName = basename($atch_url);
         }
 
         return PMXI_API::upload_image($pid, $atch_url, $downloadFiles, $logger, true, $fileName, "files", $search_in_gallery, $importData['articleData'], $importData);

@@ -78,7 +78,9 @@ class FieldCloneV5 extends Field {
             foreach ($subFieldsData as $subFieldData) {
                 if ($subFieldData) {
                     $field = $this->initDataAndCreateField($subFieldData);
-                    $this->subFields[] = $field;
+                    if ($field) {
+	                    $this->subFields[] = $field;
+                    }
                 }
             }
         }
@@ -130,15 +132,14 @@ class FieldCloneV5 extends Field {
                 if (strpos($sub_field_key, 'group_') === 0){
                     if (!empty($fields)){
                         foreach ($fields as $sub_field) {
-                            if ($sub_field['parent'] == $this->getFieldKey()){
+                            if ($sub_field['parent'] == $sub_field_key){
                                 $sub_fieldData = $sub_field;
                                 $sub_fieldData['ID'] = $sub_fieldData['id'] = uniqid();
                                 $fieldsData[] = $sub_fieldData;
                             }
                         }
                     }
-                }
-                else{
+                } else {
                     $fieldsData[] = $this->getLocalFieldDataByKey($sub_field_key);
                 }
             }

@@ -3,7 +3,7 @@
 Plugin Name: WP All Import - ACF Add-On
 Plugin URI: http://www.wpallimport.com/
 Description: Import to Advanced Custom Fields. Requires WP All Import & Advanced Custom Fields.
-Version: 3.3.4
+Version: 3.3.5
 Author: Soflyy
 */
 /**
@@ -24,7 +24,7 @@ define('PMAI_ROOT_URL', rtrim(plugin_dir_url(__FILE__), '/'));
  */
 define('PMAI_PREFIX', 'pmai_');
 
-define('PMAI_VERSION', '3.3.4');
+define('PMAI_VERSION', '3.3.5');
 
 if ( class_exists('PMAI_Plugin') and PMAI_EDITION == "free"){
 
@@ -229,13 +229,11 @@ else {
 			// register admin page pre-dispatcher
 			add_action('admin_init', array($this, 'adminInit'), 1);
 			add_action('init', array($this, 'init'), 10);
-
+			add_action('admin_init', array($this, 'init_available_acf_fields'), 10);
+			add_action('wp', array($this, 'init_available_acf_fields'), 10);
 		}
 
 		public function init(){
-			if ( is_admin() || ! empty($_GET['import_key']) ){
-				self::init_available_acf_fields();
-			}
 			$this->load_plugin_textdomain();
 		}
 
@@ -405,45 +403,47 @@ else {
         /**
          *  Init all available ACF fields.
          */
-        public static function init_available_acf_fields() {
-			global $acf;
-			if ($acf and version_compare($acf->settings['version'], '5.0.0') >= 0) {
-				self::$all_acf_fields = array();
-			    $groups = acf_get_field_groups();
-			    if ( ! empty($groups) ) {
-			        foreach ($groups as $group) {
-				        $fields = acf_get_fields($group);
-				        if (!empty($fields)) {
-					        foreach ($fields as $key => $field) {
-					            if ( ! empty($field['name']) ) {
-						            self::$all_acf_fields[] = $field['name'];
-                                }
+        public function init_available_acf_fields() {
+	        if ( empty(self::$all_acf_fields) && ( is_admin() || ! empty($_GET['import_key'])) ) {
+		        global $acf;
+		        if ($acf and version_compare($acf->settings['version'], '5.0.0') >= 0) {
+			        self::$all_acf_fields = array();
+			        $groups = acf_get_field_groups();
+			        if ( ! empty($groups) ) {
+				        foreach ($groups as $group) {
+					        $fields = acf_get_fields($group);
+					        if (!empty($fields)) {
+						        foreach ($fields as $key => $field) {
+							        if ( ! empty($field['name']) ) {
+								        self::$all_acf_fields[] = $field['name'];
+							        }
+						        }
 					        }
 				        }
-                    }
-                }
-			} else {
-				$acfs = get_posts(array('posts_per_page' => -1, 'post_type' => 'acf'));
-				self::$all_acf_fields = array();
-				if (!empty($acfs)) {
-					foreach ($acfs as $key => $acf_entry) {
-						foreach (get_post_meta($acf_entry->ID, '') as $cur_meta_key => $cur_meta_val) {
-							if (strpos($cur_meta_key, 'field_') !== 0) {
-                                continue;
-                            }
-							$field = (!empty($cur_meta_val[0])) ? unserialize($cur_meta_val[0]) : array();
-							$field_name = $field['name'];
-							if ( ! in_array($field_name, self::$all_acf_fields) ) self::$all_acf_fields[] = $field_name;
-							if ( ! empty($field['sub_fields']) ){
-								foreach ($field['sub_fields'] as $key => $sub_field) {
-									$sub_field_name = $sub_field['name'];
-									if ( ! in_array($sub_field_name, self::$all_acf_fields) ) self::$all_acf_fields[] = $sub_field_name;
-								}
-							}
-						}
-					}
-				}
-			}
+			        }
+		        } else {
+			        $acfs = get_posts(array('posts_per_page' => -1, 'post_type' => 'acf'));
+			        self::$all_acf_fields = array();
+			        if (!empty($acfs)) {
+				        foreach ($acfs as $key => $acf_entry) {
+					        foreach (get_post_meta($acf_entry->ID, '') as $cur_meta_key => $cur_meta_val) {
+						        if (strpos($cur_meta_key, 'field_') !== 0) {
+							        continue;
+						        }
+						        $field = (!empty($cur_meta_val[0])) ? unserialize($cur_meta_val[0]) : array();
+						        $field_name = $field['name'];
+						        if ( ! in_array($field_name, self::$all_acf_fields) ) self::$all_acf_fields[] = $field_name;
+						        if ( ! empty($field['sub_fields']) ){
+							        foreach ($field['sub_fields'] as $key => $sub_field) {
+								        $sub_field_name = $sub_field['name'];
+								        if ( ! in_array($sub_field_name, self::$all_acf_fields) ) self::$all_acf_fields[] = $sub_field_name;
+							        }
+						        }
+					        }
+				        }
+			        }
+		        }
+	        }
 		}
 
 		/**

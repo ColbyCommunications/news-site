@@ -87,6 +87,36 @@ abstract class Field implements FieldInterface {
             }
         }
 
+	    // Init sub fields for Flexible Content
+	    if (ACFService::isACFNewerThan('5.0.0') && $this->getType() == 'flexible_content' && $this->isLocalFieldStorage()) {
+		    // get flexible field
+		    $flexibleField = $this->getData('field');
+		    // vars
+		    $flex_fields = acf_get_fields($flexibleField);
+		    // loop through layouts, sub fields and swap out the field key with the real field
+		    foreach (array_keys($flexibleField['layouts']) as $fi) {
+			    // extract layout
+			    $layout = acf_extract_var($flexibleField['layouts'], $fi);
+			    // append sub fields
+			    if (!empty($flex_fields)) {
+				    $layout['sub_fields'] = [];
+				    foreach (array_keys($flex_fields) as $fk) {
+					    // check if 'parent_layout' is empty
+					    if (empty($flex_fields[$fk]['parent_layout'])) {
+						    // parent_layout did not save for this field, default it to first layout
+						    $flex_fields[$fk]['parent_layout'] = $layout['key'];
+					    }
+					    // append sub field to layout,
+					    if ($flex_fields[$fk]['parent_layout'] == $layout['key']) {
+						    $layout['sub_fields'][] = acf_extract_var($flex_fields, $fk);
+					    }
+				    }
+			    }
+			    // append back to layouts
+			    $this->data['field']['layouts'][$fi] = $layout;
+		    }
+	    }
+
     }
 
     /**
@@ -588,11 +618,8 @@ abstract class Field implements FieldInterface {
                         }
                     }
                 }
-            }
-            else{
-
+            } else {
                 global $acf_register_field_group;
-
                 if (!empty($acf_register_field_group)){
                     foreach ($acf_register_field_group as $key => $group) {
                         foreach ($group['fields'] as $field) {
@@ -605,8 +632,7 @@ abstract class Field implements FieldInterface {
                     }
                 }
             }
-        }
-        else {
+        } else {
             foreach ($subFields as $field) {
                 $subFieldData = $field;
                 $subFieldData['ID'] = $subFieldData['id'] = uniqid();
@@ -663,7 +689,7 @@ abstract class Field implements FieldInterface {
 
     /**
      * @param $subFieldData
-     * @return Field
+     * @return Field|bool
      */
     public function initDataAndCreateField($subFieldData){
 
@@ -675,6 +701,20 @@ abstract class Field implements FieldInterface {
             $fieldData['label'] = $subFieldData->post_title;
             $fieldData['key']   = $subFieldData->post_name;
             $fieldData['name']  = $subFieldData->post_excerpt;
+        }
+
+        // Do not include same field as child to avoid `Maximum function nesting level` exception.
+	    $parent = $this->getParent();
+        if ($parent) {
+        	do {
+		        if ( $parent->getFieldKey() == $fieldData['key'] ) {
+			        return FALSE;
+		        }
+        		$parent = $parent->getParent();
+	        } while ($parent);
+        }
+        if ( $this->getFieldKey() == $fieldData['key'] ) {
+        	return FALSE;
         }
 
         // Create sub field instance

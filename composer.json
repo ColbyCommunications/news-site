@@ -39,7 +39,8 @@
         "wpackagist-theme/hello-elementor": "^2.2.2",
         "wpackagist-theme/twentytwentyone": "^1.4",
         "wpackagist-plugin/term-management-tools": "^2.0.1",
-        "wpackagist-plugin/convert-to-blocks": "^1.0.2"
+        "wpackagist-plugin/convert-to-blocks": "^1.0.2",
+        "wpackagist-plugin/reusable-blocks-extended": "^0.7.0"
     },
     "authors": [
         {

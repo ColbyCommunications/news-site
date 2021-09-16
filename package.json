@@ -1,0 +1,15 @@
+{
+  "name": "colby-news-site",
+  "version": "1.0.0",
+  "description": "This site has no NPM settings at this time, but having a package.json makes the deploy scripts happier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "4nvswumupeimi@git.us-4.platform.sh:4nvswumupeimi.git"
+  },
+  "author": "Colby Communications / NewCity",
+  "license": "UNLICENSED"
+}

@@ -7729,13 +7729,25 @@
 				placeholder:		this.get('placeholder'),
 				multiple:			this.get('multiple'),
 				data:				[],
-				templateSelection:	function( selection ){
-					var $selection = $('<span class="acf-selection"></span>');
-					$selection.text( acf.escHtml( selection.text ) );
-					$selection.data('element', selection.element);
-					return $selection;
+				escapeMarkup:		function( markup ) {
+					if (typeof markup !== 'string') {
+						return markup;
+					}
+					return acf.escHtml( markup ); 
 				}
 			};
+
+			// Only use the template if SelectWoo is not loaded to work around https://github.com/woocommerce/woocommerce/pull/30473
+			if ( ! acf.isset(window, 'jQuery', 'fn', 'selectWoo') ) {
+
+				options.templateSelection = function( selection ) {
+					var $selection = $('<span class="acf-selection"></span>');
+					$selection.html( acf.escHtml( selection.text ) );
+					$selection.data('element', selection.element);
+					return $selection;
+				};
+
+			}
 			
 			// multiple
 			if( options.multiple ) {
@@ -7791,8 +7803,12 @@
 			            // loop
 			            $ul.find('.select2-selection__choice').each(function() {
 				            
-				            // vars
-							var $option = $( $(this).children('span.acf-selection').data('element') );
+				            // Attempt to use .data if it exists (select2 version < 4.0.6) or use our template data instead.
+							if ( $(this).data('data') ) {
+								var $option = $( $(this).data('data').element );
+							} else {
+								var $option = $( $(this).children('span.acf-selection').data('element') );
+							}
 							
 							// detach and re-append to end
 							$option.detach().appendTo( $select );

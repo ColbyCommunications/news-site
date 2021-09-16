@@ -2190,18 +2190,18 @@
         },
         {
             "name": "wpackagist-plugin/acf-autosize",
-            "version": "2.0.9",
+            "version": "2.0.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/acf-autosize/",
-                "reference": "tags/2.0.9"
+                "reference": "tags/2.0.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-autosize.2.0.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/acf-autosize.2.0.11.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/acf-autosize/"

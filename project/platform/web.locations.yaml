@@ -66,3 +66,7 @@
 ###     Project Specific    ###
 ###############################
 # Add any additional project specific php dependencies you need in the environment after this line
+"/assign_story_types.php":
+  root: 'web/wp/assign_story_types.php'
+  allow: true
+  scripts: true

@@ -23,7 +23,7 @@ while ($rowFA = $idsFA->fetch_assoc())
 {
     //498
     $conn->query("INSERT INTO wp_term_relationships (object_id, term_taxonomy_id, term_order) VALUES ({$rowFA['ID']}, 498, 0)");
-    $conn->query("DELETE FROM wp_term_relationships WHERE object_id={$rowFA['ID']}");
+    $conn->query("DELETE FROM wp_term_relationships WHERE object_id={$rowFA['ID']} and term_taxonomy_id <= 224");
 }
 
 
@@ -34,7 +34,7 @@ while ($rowITN = $idsITN->fetch_assoc())
 {
     //497
     $conn->query("INSERT INTO wp_term_relationships (object_id, term_taxonomy_id, term_order) VALUES ({$rowITN['ID']}, 497, 0)");
-    $conn->query("DELETE FROM wp_term_relationships WHERE object_id={$rowITN['ID']}");
+    $conn->query("DELETE FROM wp_term_relationships WHERE object_id={$rowITN['ID']} and term_taxonomy_id <= 224");
 }
 
 $conn->close();

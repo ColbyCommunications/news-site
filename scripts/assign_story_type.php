@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 // FA
 $idsFA = $conn->query("select p.ID from wp_posts p inner join wp_term_relationships tr on p.ID = tr.object_id where tr.term_taxonomy_id = 20 and p.post_type = 'external_post' and post_status='publish'");
 
-while ($row = $result->fetch_assoc())
+while ($row = $idsFA->fetch_assoc())
 {
     die(var_dump($row));
 }

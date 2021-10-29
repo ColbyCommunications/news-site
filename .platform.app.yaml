@@ -56,7 +56,8 @@ variables:
   env: !include project/platform/variables.env.yaml
   php:
     upload_max_filesize: 128M
-    memory_limit: -1
+    memory_limit: 256M
+    date.timezone: "America/New_York"
 
 # The configuration of scheduled execution!
 crons: !include project/platform/crons.yaml

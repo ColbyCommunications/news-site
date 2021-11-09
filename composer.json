@@ -9,7 +9,7 @@
         "devgeniem/wp-redis-object-cache-dropin": "^1.6",
         "johnpbloch/wordpress-core": "^5.8",
         "johnpbloch/wordpress-core-installer": "^2.0",
-        "newcity/newcity-wp-wysiwyg": "^0.2.4",
+        "newcity/newcity-wp-wysiwyg": "dev-elementor-compatible",
         "pristas-peter/wp-graphql-gutenberg": "^0.3.4",
         "wpackagist-plugin/accordion-blocks": "^1.3",
         "wpackagist-plugin/acf-autosize": "^2.0.11",

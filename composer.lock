@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e43818f33a3ab902a2c19ae57b9f6cd8",
+    "content-hash": "84ef3a981480403f42dae24aef4428e6",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",
@@ -130,7 +130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "7028d445c5e844930e3837818f4a33234ca0e452"
+                "reference": "57b2136f7dbbb9ae5fc2107d75c045578f834cf8"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -154,7 +154,7 @@
                     "composer run-script post-update-cmd"
                 ]
             },
-            "time": "2021-11-02T18:04:16+00:00"
+            "time": "2021-11-04T13:42:11+00:00"
         },
         {
             "name": "composer/installers",
@@ -1033,16 +1033,16 @@
         },
         {
             "name": "newcity/newcity-wp-wysiwyg",
-            "version": "v0.2.4",
+            "version": "dev-elementor-compatible",
             "source": {
                 "type": "git",
                 "url": "https://github.com/newcity/newcity-wp-wysiwyg.git",
-                "reference": "30b6ac0c6c6d24981b8580a7f93fb4c98343b794"
+                "reference": "4f83d5cfe6739b59d65e0eb8f14d6939056c5d11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/newcity/newcity-wp-wysiwyg/zipball/30b6ac0c6c6d24981b8580a7f93fb4c98343b794",
-                "reference": "30b6ac0c6c6d24981b8580a7f93fb4c98343b794",
+                "url": "https://api.github.com/repos/newcity/newcity-wp-wysiwyg/zipball/4f83d5cfe6739b59d65e0eb8f14d6939056c5d11",
+                "reference": "4f83d5cfe6739b59d65e0eb8f14d6939056c5d11",
                 "shasum": ""
             },
             "require": {
@@ -1053,9 +1053,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/newcity/newcity-wp-wysiwyg/issues",
-                "source": "https://github.com/newcity/newcity-wp-wysiwyg/tree/v0.2.4"
+                "source": "https://github.com/newcity/newcity-wp-wysiwyg/tree/elementor-compatible"
             },
-            "time": "2021-02-22T14:30:07+00:00"
+            "time": "2021-11-09T20:07:10+00:00"
         },
         {
             "name": "opis/json-schema",
@@ -2905,11 +2905,12 @@
     "stability-flags": {
         "ahebrank/wp-frontback": 20,
         "colbycommunications/colby-groups": 20,
-        "colbycommunications/colby-news-theme": 20
+        "colbycommunications/colby-news-theme": 20,
+        "newcity/newcity-wp-wysiwyg": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }

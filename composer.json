@@ -37,7 +37,7 @@
         "wpackagist-theme/twentytwentyone": "^1.4",
         "wpackagist-plugin/term-management-tools": "^2.0.1",
         "wpackagist-plugin/convert-to-blocks": "^1.0.2",
-        "wpackagist-plugin/reusable-blocks-extended": "^0.7.0",
+        "wpackagist-plugin/reusable-blocks-extended": "^0.8.0",
         "wp-graphql/wp-graphql-acf": "^0.5.3",
         "wpackagist-plugin/yoast-test-helper": "^1.14",
         "wp-graphql/wp-graphiql": "^1.0",

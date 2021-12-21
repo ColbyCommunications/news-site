@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a5632443a4eeb9e0dd99ae9162c91fb",
+    "content-hash": "8e9fe42ea6fa5d278b0b92cf67249c9d",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",
@@ -2702,15 +2702,15 @@
         },
         {
             "name": "wpackagist-plugin/reusable-blocks-extended",
-            "version": "0.7",
+            "version": "0.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/reusable-blocks-extended/",
-                "reference": "tags/0.7"
+                "reference": "tags/0.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/reusable-blocks-extended.0.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/reusable-blocks-extended.0.8.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e9fe42ea6fa5d278b0b92cf67249c9d",
+    "content-hash": "0e7152977ffb75aa5517994b2e451d6b",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",
@@ -126,35 +126,52 @@
         },
         {
             "name": "colbycommunications/colby-news-theme",
-            "version": "dev-newcity",
+            "version": "dev-news-2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "dc48aaa715475dfae44e79e28d0b67caa2f1db30"
+                "reference": "d0492826919ab257ff43a7ca671cf3e84cef3996"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
                 "masterminds/html5": "^2.7",
                 "timber/timber": "^1.18"
             },
-            "type": "wordpress-theme",
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "wordpress-install-dir": "wordpress"
+            },
             "scripts": {
-                "post-update-cmd": [
-                    "find . -name '.??*' -type f -delete",
-                    "find . -name 'phpunit*' -type f -delete",
-                    "find . -name '.??*' -type d -exec rm -rf {} +",
-                    "rm -rf vendor/timber/timber/tests",
-                    "rm -rf vendor/timber/timber/phpcs.xml",
-                    "rm -rf vendor/timber/timber/phpunit*",
-                    "rm -rf vendor/timber/timber/phpunit*",
-                    "rm -rf vendor/timber/timber/bin/*.sh*",
-                    "rm -rf vendor/twig/twig/src/Test"
-                ],
                 "post-install-cmd": [
                     "composer run-script post-update-cmd"
+                ],
+                "wp-setup": [
+                    "cp wordpress/index.php ./index.php",
+                    "rm -rf wordpress/wp-content",
+                    "cp wp-setup/wp-config.php wordpress/wp-config.php",
+                    "sed -i 's/\\/wp-blog-header/\\/wordpress\\/wp-blog-header/g' ./index.php",
+                    "mkdir -p /var/www/.wp-cli",
+                    "rm /var/www/.wp-cli/config.yml",
+                    "ln -s /app/wp-cli.yml /var/www/.wp-cli/config.yml"
+                ],
+                "phpcs": [
+                    "./vendor/bin/phpcs -p --extensions=php"
+                ],
+                "phpcs-prod": [
+                    "./vendor/bin/phpcs -p --extensions=php --warning-severity=8 --report=junit --report-file=php-codesniffer-results.xml"
+                ],
+                "phpcbf-prod": [
+                    "./vendor/bin/phpcbf -p --extensions=php --warning-severity=8 -q || true",
+                    "composer run-script phpcs-prod"
                 ]
             },
-            "time": "2021-11-23T15:25:02+00:00"
+            "description": "Test environment for WordPress themes and plugins",
+            "time": "2022-01-31T20:22:54+00:00"
         },
         {
             "name": "composer/installers",

@@ -9,9 +9,10 @@ export NVM_DIR="$HOME/.nvm"
 
 ## colby news
 cd web/wp-content/themes/colby-news-theme
-npm install
 composer install
 composer dump-autoload
+npm install
+npm builder-production
 cd -
 
 # npm install

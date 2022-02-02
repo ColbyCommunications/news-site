@@ -12,7 +12,7 @@ cd web/wp-content/themes/colby-news-theme
 composer install
 composer dump-autoload
 npm install
-npm builder-production
+npm run builder-production
 cd -
 
 # npm install

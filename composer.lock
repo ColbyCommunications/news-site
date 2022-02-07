@@ -130,7 +130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "93ac75c55f8b34f2959aedf1be90d25a8083c081"
+                "reference": "c44f57b17653c6a05cd7b3f6fa576176b76233f9"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -174,7 +174,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-02-03T20:47:33+00:00"
+            "time": "2022-02-07T16:53:53+00:00"
         },
         {
             "name": "composer/installers",
@@ -2986,5 +2986,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

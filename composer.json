@@ -89,5 +89,12 @@
         "post-install-cmd": [
             "rm -rf wp-content/plugins/ahebrank/.git"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "koodimonni/composer-dropin-installer": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
     }
 }

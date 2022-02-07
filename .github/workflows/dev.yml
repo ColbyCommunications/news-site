@@ -1,8 +1,8 @@
-name: Run Tests
+name: Run Tests GH Actions
 on:
   push:
     branches:
-      - 'dev'
+      - "dev"
 env:
   PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
   WEBMASTER_GITHUB_ACTIONS_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
@@ -51,13 +51,13 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
-          registry-url: 'https://npm.pkg.github.com'
+          node-version: "14.x"
+          registry-url: "https://npm.pkg.github.com"
       - run: npm install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
       - run: npm install -g sitemap_utils jsonlint sitemap commander
-      
+
       - name: Download Sitemap
         run: |
           flatten_sitemap --sitemap https://$( ~/.platformsh/bin/platform environment:info edge_hostname )/sitemap_index.xml --config .github/sitemap.json --limit 20 --randomize
@@ -77,8 +77,8 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: '14.x'
-          registry-url: 'https://npm.pkg.github.com'
+          node-version: "14.x"
+          registry-url: "https://npm.pkg.github.com"
       - run: npm install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}

@@ -2,8 +2,7 @@ name: Run Tests
 on:
   push:
     branches:
-      - '*'
-      - '!master'
+      - 'dev'
 env:
   PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
   WEBMASTER_GITHUB_ACTIONS_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}

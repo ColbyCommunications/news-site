@@ -35,7 +35,6 @@ jobs:
         run: |
           ~/.platformsh/bin/platform project:set-remote ${{ secrets.PLATFORM_PROJECT_ID }}
           ~/.platformsh/bin/platform environment:activate ${GITHUB_REF#refs/heads/} --project=${{ secrets.PLATFORM_PROJECT_ID }}
-          ~/.platformsh/bin/platform sync data --project=${{ secrets.PLATFORM_PROJECT_ID }} --environment=dev --yes
           ~/.platformsh/bin/platform environment:push -vv --target=${GITHUB_REF#refs/heads/} --project=${{ secrets.PLATFORM_PROJECT_ID }} --environment=${GITHUB_REF#refs/heads/} --force
 
   # test_prep:

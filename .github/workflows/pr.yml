@@ -1,18 +1,22 @@
-name: Run PR Audit
+name: Run PR Audit1
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
 env:
   PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
   WEBMASTER_GITHUB_ACTIONS_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
   PLATFORM_PROJECT_ID: ${{ secrets.PLATFORM_PROJECT_ID }}
   PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
+  WEBMASTER_SSH_PRIVATE_KEY: ${{ secrets.WEBMASTER_SSH_PRIVATE_KEY }}
 jobs:
   deploy_platform:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.WEBMASTER_SSH_PRIVATE_KEY }}
 
       - name: Install Psh CLI
         run: |
@@ -30,12 +34,14 @@ jobs:
           done 2>/dev/null >> ~/.ssh/known_hosts
           cat ~/.ssh/known_hosts
 
-      - name: Spin up environment
+      - name: Git Magic
         run: |
-          ~/.platformsh/bin/platform project:set-remote ${{ secrets.PLATFORM_PROJECT_ID }}
-          ~/.platformsh/bin/platform environment:activate ${GITHUB_REF#refs/heads/} --project=${{ secrets.PLATFORM_PROJECT_ID }}
-          ~/.platformsh/bin/platform sync data --project=${{ secrets.PLATFORM_PROJECT_ID }} --environment=dev --yes
-          ~/.platformsh/bin/platform environment:push -vv --target=${GITHUB_REF#refs/heads/} --project=${{ secrets.PLATFORM_PROJECT_ID }} --environment=${GITHUB_REF#refs/heads/} --force
+          ~/.platformsh/bin/platform project:get ${{ secrets.PLATFORM_PROJECT_ID }} platform-remote --environment=${GITHUB_HEAD_REF}
+          cd platform-remote
+          git config --global user.email "webmaster@colby.edu"
+          git config --global user.name "Colby Webmaster"
+          git pull -X theirs git@github.com:ColbyCommunications/news-site.git ${GITHUB_HEAD_REF}
+          ~/.platformsh/bin/platform environment:push -vv --target=${GITHUB_HEAD_REF} --project=${{ secrets.PLATFORM_PROJECT_ID }} --environment=${GITHUB_HEAD_REF} --force
 
   test_prep:
     runs-on: ubuntu-latest

@@ -52,7 +52,7 @@ jobs:
       - name: Spin up environment
         if: ${{ env.PLATFORM_BRANCH_EXISTS == 'true' }}
         run: |
-          echo ${GITHUB_REF#refs/heads/}
+          echo ${{ secrets.PLATFORM_PROJECT_ID }}
           ~/.platformsh/bin/platform project:get ${{ secrets.PLATFORM_PROJECT_ID }} platform-remote --environment=${GITHUB_REF#refs/heads/}
           cd platform-remote
           ~/.platformsh/bin/platform project:set-remote ${{ secrets.PLATFORM_PROJECT_ID }}

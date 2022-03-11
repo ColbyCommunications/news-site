@@ -130,7 +130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "4df25702011b51a716a8fd2edbda8f0a4abbf6c5"
+                "reference": "d7ea06c504e8ebe6e7418952dd9e9763469e7766"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -174,7 +174,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-03-11T15:11:17+00:00"
+            "time": "2022-03-11T16:22:31+00:00"
         },
         {
             "name": "composer/ca-bundle",

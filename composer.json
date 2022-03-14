@@ -4,7 +4,7 @@
     "type": "project",
     "require": {
         "ahebrank/wp-frontback": "dev-master",
-        "colbycommunications/colby-news-theme": "dev-news-2.0",
+        "colbycommunications/colby-news-theme": "^1.0.1",
         "wpackagist-theme/twentyseventeen": "^2.1",
         "wpackagist-plugin/classic-editor": "^1.4",
         "colbycommunications/colby-groups": "dev-wp4-test",

@@ -1,28 +1,28 @@
 # Change the name property to the name of your project. Suggestions is to use the name of your project in Platform,
 # which is also the name/slug of your repository on gitlab
-name: colby-news-platform
+name: news
 recipe: wordpress
 config:
-    webroot: web
-    xdebug: true
-    via: nginx
-    config:
-      vhosts: ./project/lando/wordpress.conf
+  webroot: web
+  xdebug: true
+  via: nginx
+  config:
+    vhosts: ./project/lando/wordpress.conf
 env_file:
-    - lando.env
+  - lando.env
 
 services:
   appserver:
     type: php:7.4
     build:
-        # Intall the platform.sh CLI and make sure it is up to date.
-        - "./scripts/lando-platform-install.sh"
+      # Intall the platform.sh CLI and make sure it is up to date.
+      - "./scripts/lando-platform-install.sh"
     run:
-        - "platform self-update -y"
-        # 'w' to let it know we're dealing with WordPress
-        - "./scripts/lando-run.sh n w"
-        - "./scripts/setup-mu-plugins.sh"
-        - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
+      - "platform self-update -y"
+      # 'w' to let it know we're dealing with WordPress
+      - "./scripts/lando-run.sh n w"
+      - "./scripts/setup-mu-plugins.sh"
+      - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
 events:
   post-start:
     # Install composer dependencies
@@ -73,7 +73,6 @@ tooling:
     service: appserver
     description: Platform CLI passthru
     cmd: "platform"
-
 # If you are setting up a WordPress multisite, you will need to uncomment the next few lines.  For each domain in your
 # multisite, you will need them in the list.
 # proxy:

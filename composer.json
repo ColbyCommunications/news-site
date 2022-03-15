@@ -4,7 +4,7 @@
     "type": "project",
     "require": {
         "ahebrank/wp-frontback": "dev-master",
-        "colbycommunications/colby-news-theme": "dev-newcity",
+        "colbycommunications/colby-news-theme": "1.0.1",
         "wpackagist-theme/twentyseventeen": "^2.1",
         "wpackagist-plugin/classic-editor": "^1.4",
         "colbycommunications/colby-groups": "dev-wp4-test",
@@ -44,7 +44,9 @@
         "pristas-peter/wp-graphql-gutenberg": "^0.3.4",
         "wpackagist-plugin/wp-saml-auth": "^1.1.0",
         "wpackagist-plugin/siteimprove": "1.2.1",
-        "wpackagist-plugin/query-monitor": "^3.7.1"
+        "wpackagist-plugin/query-monitor": "^3.7.1",
+        "wp-cli/wp-cli-bundle": "^2.6",
+        "psy/psysh": "^0.11.2"
     },
     "authors": [
         {
@@ -89,5 +91,12 @@
         "post-install-cmd": [
             "rm -rf wp-content/plugins/ahebrank/.git"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "koodimonni/composer-dropin-installer": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
     }
 }

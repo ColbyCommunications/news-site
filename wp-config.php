@@ -192,6 +192,8 @@ if (!defined('ABSPATH') ) {
     define('ABSPATH', dirname(__FILE__) . '/');
 }
 
+define( 'ALGOLIA_SPLIT_POSTS', false );
+
 /**
  * Sets up WordPress vars and included files.
  * Moved to ./web/wp-config.php

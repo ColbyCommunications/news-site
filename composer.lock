@@ -130,7 +130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "1328d91c021330a02cb2a6c6c582e8570c412909"
+                "reference": "f2bcbd2c9d48fe14fb75c7489821f283b639c0a5"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -174,7 +174,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-03-25T20:01:38+00:00"
+            "time": "2022-03-28T15:38:14+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -6937,15 +6937,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.3.3"
+                "reference": "tags/2.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.3.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.3.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

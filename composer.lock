@@ -204,7 +204,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "edca213fad07be20f25292d62a09085f255a65ec"
+                "reference": "2fff22c3584ae9d48797a5442aa755ccadf27d90"
             },
             "require": {
                 "algolia/algoliasearch-client-php": "^3.2",
@@ -249,7 +249,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-03-28T20:36:44+00:00"
+            "time": "2022-03-28T20:44:21+00:00"
         },
         {
             "name": "composer/ca-bundle",

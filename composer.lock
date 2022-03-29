@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac38d4e95520b914b5d23ef10d508aa6",
+    "content-hash": "6a4338d9d9323580f71fc3c30a3005bd",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",

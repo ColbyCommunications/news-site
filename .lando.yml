@@ -23,6 +23,7 @@ services:
       - "./scripts/lando-run.sh n w"
       - "./scripts/setup-mu-plugins.sh"
       - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
+      - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wp-search-with-algolia/algolia.php /app/web/wp-content/mu-plugins/algolia.php
 events:
   post-start:
     # Install composer dependencies

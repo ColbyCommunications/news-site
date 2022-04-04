@@ -1,5 +1,12 @@
 <?php
 
+require_once('vendor/autoload.php');
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+define('PLATFORM_VARIABLES', json_decode($_ENV['PLATFORM_VARIABLES'], true));
+
 // Set host values
 $site_scheme = 'http';
 $site_host = 'localhost';
@@ -132,7 +139,7 @@ if (false !== $strRelationships = getenv('PLATFORM_RELATIONSHIPS')) {
     }
 } else {
     // You can create a wp-config-local.php file with local configuration.
-    if (file_exists(dirname(__FILE__) . '/wp-config-local.php') ) {
+    if (file_exists(dirname(__FILE__) . '/wp-config-local.php')) {
         include dirname(__FILE__) . '/wp-config-local.php';
     }
 }
@@ -186,9 +193,9 @@ ini_set('pcre.backtrack_limit', 200000);
 ini_set('pcre.recursion_limit', 200000);
 
 /**
- * Absolute path to the WordPress directory. 
+ * Absolute path to the WordPress directory.
 */
-if (!defined('ABSPATH') ) {
+if (!defined('ABSPATH')) {
     define('ABSPATH', dirname(__FILE__) . '/');
 }
 

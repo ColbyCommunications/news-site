@@ -5,7 +5,7 @@ const { env } = process;
 // Utility to assist in decoding a packed JSON variable.
 function read_base64_json(varName) {
     try {
-        return JSON.parse(Buffer.from(env[varName], 'base64').toString());
+        return Buffer.from(env[varName], 'base64').toString();
     } catch (err) {
         throw new Error(`no ${varName} environment variable`);
     }
@@ -15,4 +15,4 @@ function read_base64_json(varName) {
 const env_variables = read_base64_json('PLATFORM_VARIABLES');
 
 fs.closeSync(fs.openSync('.env', 'w'));
-fs.appendFileSync('.env', env_variables.replace(/\s+/g, ''));
+fs.appendFileSync('.env', `PLATFORM_VARIABLES=${env_variables.replace(/\s+/g, '')}`);

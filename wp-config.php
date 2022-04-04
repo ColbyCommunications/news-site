@@ -3,6 +3,7 @@
 require_once('vendor/autoload.php');
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+die(var_dump($dotenv));
 $dotenv->load();
 
 define('PLATFORM_VARIABLES', json_decode($_ENV['PLATFORM_VARIABLES'], true));

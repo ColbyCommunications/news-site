@@ -16,7 +16,6 @@ curl -sS https://platform.sh/cli/installer | php
 # install redis cache
 ./scripts/install-redis.sh 5.1.1
 
-
 # create a symlink to our actual file in the root of mu-plugins
 ./scripts/setup-mu-plugins.sh
 
@@ -42,7 +41,7 @@ nvm use 14.16.1
 # run npm install in all colby dependencies
 ./scripts/dependencies-run-install-build.sh
 
-node ./scripts/generate-env.js
+node ./scripts/platform_generate-env.js
 
 ################################
 ###     Project Specific    ###

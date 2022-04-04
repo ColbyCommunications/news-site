@@ -15,4 +15,4 @@ function read_base64_json(varName) {
 const env_variables = read_base64_json('PLATFORM_VARIABLES');
 
 fs.closeSync(fs.openSync('.env', 'w'));
-fs.appendFileSync('.env', `PLATFORM_VARIABLES=${env_variables.replace(/\s+/g, '')}`);
+fs.appendFileSync('.env', `PLATFORM_VARS=${env_variables.replace(/\s+/g, '')}`);

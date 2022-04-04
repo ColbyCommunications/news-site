@@ -3,10 +3,9 @@
 require_once('vendor/autoload.php');
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-
 $dotenv->load();
-die(var_dump($_ENV));
-define('PLATFORM_VARIABLES', json_decode($_ENV['PLATFORM_VARIABLES'], true));
+
+define('PLATFORM_VARIABLES', json_decode($_ENV['PLATFORM_VARS'], true));
 
 // Set host values
 $site_scheme = 'http';

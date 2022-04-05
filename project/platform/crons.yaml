@@ -18,3 +18,7 @@ backup:
 ###     Project Specific    ###
 ###############################
 # Add any additional project specific cron jobs you need after this line
+
+algolia_reindex:
+  spec: '*/15 * * * *'
+  cmd: wget -q -O - http://yourdomain.com/wp-cron.php?doing_wp_cron

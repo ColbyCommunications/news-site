@@ -147,7 +147,7 @@ if (false !== $strRelationships = getenv('PLATFORM_RELATIONSHIPS')) {
 // Define wp-content directory outside of WordPress core directory
 define('WP_HOME', $site_scheme . '://' . $site_host);
 define('WP_SITEURL', WP_HOME . '/wp');
-
+define('DISABLE_WP_CRON', true);
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/web/wp-content');
 
 $strContentURL =  WP_HOME . '/wp-content';

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iCAAiC,CAAC;EACjC,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,MAAM;CACjB;;AAED,AAAA,sCAAsC,CAAC;EACtC,IAAI,EAAE,CAAC;CACP;;AAED,AAAA,2CAA2C,CAAC;EAC3C,MAAM,EAAE,MAAM;EACd,WAAW,EAAE,WAAW;CACxB",
+    "sources": [
+        "site-editor.scss"
+    ],
+    "names": [],
+    "file": "site-editor.css"
+}

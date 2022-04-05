@@ -1,0 +1,439 @@
+.jet-dashboard-page__banners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.jet-dashboard-page__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 20px;
+  border-radius: 4px;
+  color: #23282D;
+  overflow: hidden;
+  min-width: 300px;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-box-shadow: 0px 2px 6px rgba(35, 40, 45, 0.07);
+          box-shadow: 0px 2px 6px rgba(35, 40, 45, 0.07);
+}
+
+.jet-dashboard-page__banner .banner-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border-radius: 4px;
+}
+
+.jet-dashboard-page__banner .banner-inner {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.jet-dashboard-page__banner .banner-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+
+.jet-dashboard-page__banner .banner-title {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.jet-dashboard-page__banner .banner-content {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.jet-dashboard-page__banner .banner-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.jet-dashboard-page__banner .banner-buttons .cx-vui-button {
+  margin-right: 10px;
+}
+
+.jet-dashboard-page__banner .banner-buttons .cx-vui-button:last-child {
+  margin-right: 0;
+}
+
+.jet-dashboard-page__banner.col-4-4 {
+  width: 100%;
+}
+
+.jet-dashboard-page__banner.col-4-3 {
+  width: 75%;
+}
+
+.jet-dashboard-page__banner.col-4-2 {
+  width: 50%;
+}
+
+.jet-dashboard-page__banner.col-4-1 {
+  width: 25%;
+}
+
+.jet-dashboard-page__banner.premade-preset .banner-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 20px 30px 30px 30px;
+}
+
+.jet-dashboard-page__banner.light-1-preset {
+  background-color: white;
+}
+
+.jet-dashboard-page__banner.light-1-preset .banner-label {
+  color: #BB97FF;
+}
+
+.jet-dashboard-page__banner.light-1-preset .banner-content {
+  color: #7B7E81;
+}
+
+.jet-dashboard-page__banner.light-2-preset {
+  background-image: url("../images/banner-light-bg-1.png");
+  background-color: #F6F9FE;
+  background-size: 100% 98px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.jet-dashboard-page__banner.light-2-preset .banner-frame {
+  background-color: white;
+  margin: 10px;
+}
+
+.jet-dashboard-page__banner.light-2-preset .banner-label {
+  color: #26E8A8;
+}
+
+.jet-dashboard-page__banner.light-2-preset .banner-content {
+  color: #7B7E81;
+}
+
+.jet-dashboard-page__banner.light-3-preset {
+  background-color: white;
+}
+
+.jet-dashboard-page__banner.light-3-preset:before {
+  display: block;
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  top: -50px;
+  right: -30px;
+  background-color: #F6F9FE;
+  content: '';
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.jet-dashboard-page__banner.light-3-preset:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/youtube-icons.svg");
+  background-size: 120px;
+  background-position: getValueByDirection(calc(100% - 5px) -20px, calc(0% - 5px) -20px);
+  background-repeat: no-repeat;
+  content: '';
+  z-index: 2;
+}
+
+.jet-dashboard-page__banner.light-3-preset .banner-inner {
+  position: relative;
+  z-index: 3;
+}
+
+.jet-dashboard-page__banner.light-3-preset .banner-label {
+  color: #26E8A8;
+}
+
+.jet-dashboard-page__banner.light-3-preset .banner-content {
+  color: #7B7E81;
+}
+
+.jet-dashboard-page__banner.light-4-preset {
+  background-color: white;
+}
+
+.jet-dashboard-page__banner.light-4-preset:before {
+  display: block;
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  top: -50px;
+  right: -30px;
+  background-color: #F6F9FE;
+  border-radius: 50%;
+  content: '';
+  z-index: 1;
+}
+
+.jet-dashboard-page__banner.light-4-preset:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/elementor-wordpress-icon.svg");
+  background-size: 120px;
+  background-position: getValueByDirection(calc(100% - 10px) -55px, calc(0% - 10px) -55px);
+  background-repeat: no-repeat;
+  content: '';
+  z-index: 2;
+}
+
+.jet-dashboard-page__banner.light-4-preset .banner-inner {
+  position: relative;
+  z-index: 3;
+}
+
+.jet-dashboard-page__banner.light-4-preset .banner-label {
+  color: #26E8A8;
+}
+
+.jet-dashboard-page__banner.light-4-preset .banner-content {
+  color: #7B7E81;
+}
+
+.jet-dashboard-page__banner.dark-1-preset {
+  background-color: #0F1419;
+}
+
+.jet-dashboard-page__banner.dark-1-preset .banner-label {
+  color: #26E8A8;
+}
+
+.jet-dashboard-page__banner.dark-1-preset .banner-title {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-1-preset .banner-content {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-1-preset .cx-vui-button {
+  color: #4EFEC3;
+  -webkit-box-shadow: inset 0 0 0 1px #4EFEC3;
+          box-shadow: inset 0 0 0 1px #4EFEC3;
+}
+
+.jet-dashboard-page__banner.dark-2-preset {
+  background-color: #0F1419;
+}
+
+.jet-dashboard-page__banner.dark-2-preset:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(120px 120px at 2.82% -9.25%, rgba(40, 112, 93, 0.81) 0%, rgba(40, 112, 93, 0) 100%);
+  content: '';
+  z-index: 1;
+}
+
+.jet-dashboard-page__banner.dark-2-preset:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(190px 190px at 94.51% 127.17%, #5B77E7 0%, rgba(91, 119, 231, 0) 100%);
+  content: '';
+  z-index: 2;
+}
+
+.jet-dashboard-page__banner.dark-2-preset .banner-inner {
+  position: relative;
+  z-index: 3;
+}
+
+.jet-dashboard-page__banner.dark-2-preset .banner-label {
+  color: #26E8A8;
+}
+
+.jet-dashboard-page__banner.dark-2-preset .banner-title {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-2-preset .banner-content {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-2-preset .cx-vui-button {
+  color: #4EFEC3;
+  -webkit-box-shadow: inset 0 0 0 1px #4EFEC3;
+          box-shadow: inset 0 0 0 1px #4EFEC3;
+}
+
+.jet-dashboard-page__banner.dark-3-preset {
+  background-color: #0F1419;
+}
+
+.jet-dashboard-page__banner.dark-3-preset:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(190px 190px at 91% -24.9%, rgba(91, 119, 231, 0.88) 0%, rgba(91, 119, 231, 0) 100%);
+  content: '';
+  z-index: 1;
+}
+
+.jet-dashboard-page__banner.dark-3-preset:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/youtube-icons.svg");
+  background-size: 120px;
+  background-position: getValueByDirection(calc(100% - 5px) -20px, calc(0% - 5px) -20px);
+  background-repeat: no-repeat;
+  content: '';
+  z-index: 2;
+}
+
+.jet-dashboard-page__banner.dark-3-preset .banner-inner {
+  position: relative;
+  z-index: 3;
+}
+
+.jet-dashboard-page__banner.dark-3-preset .banner-label {
+  color: #26E8A8;
+}
+
+.jet-dashboard-page__banner.dark-3-preset .banner-title {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-3-preset .banner-content {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-3-preset .cx-vui-button {
+  color: #4EFEC3;
+  -webkit-box-shadow: inset 0 0 0 1px #4EFEC3;
+          box-shadow: inset 0 0 0 1px #4EFEC3;
+}
+
+.jet-dashboard-page__banner.dark-4-preset {
+  background-color: #0F1419;
+}
+
+.jet-dashboard-page__banner.dark-4-preset:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(190px 190px at 91% -24.9%, rgba(91, 119, 231, 0.88) 0%, rgba(91, 119, 231, 0) 100%);
+  content: '';
+  z-index: 1;
+}
+
+.jet-dashboard-page__banner.dark-4-preset:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/elementor-wordpress-icon.svg");
+  background-size: 120px;
+  background-position: getValueByDirection(calc(100% - 20px) -60px, calc(0% - 20px) -60px);
+  background-repeat: no-repeat;
+  content: '';
+  z-index: 2;
+}
+
+.jet-dashboard-page__banner.dark-4-preset .banner-inner {
+  position: relative;
+  z-index: 3;
+}
+
+.jet-dashboard-page__banner.dark-4-preset .banner-label {
+  color: #26E8A8;
+}
+
+.jet-dashboard-page__banner.dark-4-preset .banner-title {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-4-preset .banner-content {
+  color: white;
+}
+
+.jet-dashboard-page__banner.dark-4-preset .cx-vui-button {
+  color: #4EFEC3;
+  -webkit-box-shadow: inset 0 0 0 1px #4EFEC3;
+          box-shadow: inset 0 0 0 1px #4EFEC3;
+}
+/*# sourceMappingURL=banners.css.map */

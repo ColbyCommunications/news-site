@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,4BAA4B,CAAC;EAC5B,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;CAclB;;AAZC,AAAD,oCAAS,CAAC;EACT,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,GAAG;EACrB,MAAM,EAAE,IAAI;CACZ;;AAEA,AAAD,oCAAS,EAAG,oCAAQ,CAAA;EACnB,MAAM,EAAE,IAAI;CACZ",
+    "sources": [
+        "preview-iframe.scss"
+    ],
+    "names": [],
+    "file": "preview-iframe.css"
+}

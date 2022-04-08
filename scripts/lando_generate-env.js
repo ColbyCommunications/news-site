@@ -26,9 +26,14 @@ exec(
 
             platformVars[lineArr[0]] = lineArr[1];
         });
+
+        const passphrase = platformVars.passphrase;
+        delete platformVars.passphrase;
+
         fs.appendFileSync(
             '.env',
             `PLATFORM_VARS=${JSON.stringify(platformVars).replace(/\s+/g, '')}`
         );
+        fs.appendFileSync('.env', `\nPASSPHRASE="${passphrase}"`);
     }
 );

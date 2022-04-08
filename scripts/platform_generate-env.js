@@ -12,7 +12,11 @@ function read_base64_json(varName) {
 }
 
 // An encoded JSON object.
-const env_variables = read_base64_json('PLATFORM_VARIABLES');
+const env_variables = JSON.parse(read_base64_json('PLATFORM_VARIABLES'));
+const passphrase = env_variables.passphrase;
+
+delete env_variables.passphrase;
 
 fs.closeSync(fs.openSync('.env', 'w'));
-fs.appendFileSync('.env', `PLATFORM_VARS=${env_variables.replace(/\s+/g, '')}`);
+fs.appendFileSync('.env', `PLATFORM_VARS=${JSON.stringify(env_variables).replace(/\s+/g, '')}`);
+fs.appendFileSync('.env', `\nPASSPHRASE="${passphrase}"`);

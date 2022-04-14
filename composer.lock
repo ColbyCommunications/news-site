@@ -130,7 +130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "e9b52173e545fbf088b784c8a8a224356893fe2e"
+                "reference": "231c1392a9329207ee6bd14845eb92e9f42aec53"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -140,6 +140,7 @@
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "squizlabs/php_codesniffer": "*",
+                "symfony/var-dumper": "^5.4",
                 "wp-coding-standards/wpcs": "^2.3"
             },
             "type": "wordpress-theme",
@@ -174,7 +175,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-04-05T20:06:16+00:00"
+            "time": "2022-04-14T13:15:02+00:00"
         },
         {
             "name": "composer/ca-bundle",

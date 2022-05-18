@@ -130,7 +130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "a076c23a4c5594f043d17e5739026bbd7848e310"
+                "reference": "1828dcb41448c151692740cc434139ed714d73e0"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -175,7 +175,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-05-17T20:44:31+00:00"
+            "time": "2022-05-18T15:03:23+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -7504,15 +7504,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.8.1"
+                "reference": "tags/1.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.8.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

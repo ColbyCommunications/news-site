@@ -130,7 +130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "c70928158c8c1a60b0e22f8530ed6c1902446cbb"
+                "reference": "156e1ed8b5ed9e10a8929af62199010fb7fc3093"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -175,7 +175,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-05-19T15:13:15+00:00"
+            "time": "2022-05-19T20:38:09+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -2314,16 +2314,16 @@
         },
         {
             "name": "pristas-peter/wp-graphql-gutenberg",
-            "version": "v0.3.11",
+            "version": "v0.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pristas-peter/wp-graphql-gutenberg.git",
-                "reference": "7b2d4ca0590d2587c23b75ddb30027b44c0a80d4"
+                "reference": "93ea1aaf7e24ca09e79d7a34dcabea9797a1f3ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pristas-peter/wp-graphql-gutenberg/zipball/7b2d4ca0590d2587c23b75ddb30027b44c0a80d4",
-                "reference": "7b2d4ca0590d2587c23b75ddb30027b44c0a80d4",
+                "url": "https://api.github.com/repos/pristas-peter/wp-graphql-gutenberg/zipball/93ea1aaf7e24ca09e79d7a34dcabea9797a1f3ea",
+                "reference": "93ea1aaf7e24ca09e79d7a34dcabea9797a1f3ea",
                 "shasum": ""
             },
             "require": {
@@ -2349,9 +2349,9 @@
             "description": "Query gutenberg blocks with wp-graphql",
             "support": {
                 "issues": "https://github.com/pristas-peter/wp-graphql-gutenberg/issues",
-                "source": "https://github.com/pristas-peter/wp-graphql-gutenberg/tree/v0.3.11"
+                "source": "https://github.com/pristas-peter/wp-graphql-gutenberg/tree/v0.3.12"
             },
-            "time": "2021-08-16T13:38:20+00:00"
+            "time": "2022-05-18T17:14:57+00:00"
         },
         {
             "name": "psr/container",

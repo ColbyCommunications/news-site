@@ -28,34 +28,24 @@ exec(
     '~/.platformsh/bin/platform environment:list --columns=ID --format=plain --no-header',
     (error, stdout, stderr) => {
         if (error) {
-            console.log(`error: ${error.message}`);
             return;
         }
         if (stderr) {
-            console.log(`stderr: ${stderr}`);
             return;
         }
 
-        console.log(stdout.includes(args.branch));
         if (!stdout.includes(args.branch)) {
             execSync(
-                ` ~/.platformsh/bin/platform environment:branch ${args.branch} dev`,
+                ` ~/.platformsh/bin/platform environment:branch ${args.branch} ${args.branchFrom}`,
                 (error, stdout, stderr) => {
                     if (error) {
-                        console.log(`error: ${error.message}`);
                         return;
                     }
                     if (stderr) {
-                        console.log(`stderr: ${stderr}`);
                         return;
                     }
-
-                    console.log(stdout);
                 }
             );
-            return false;
-        } else {
-            return true;
         }
     }
 );

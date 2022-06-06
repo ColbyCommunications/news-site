@@ -1,4 +1,4 @@
-name: Run Tests
+name: Run Tests - Feature
 on:
   push:
     branches:
@@ -47,12 +47,10 @@ jobs:
       - name: Check Environment Exists
         run: |
           ~/.platformsh/bin/platform project:set-remote ${{ secrets.PLATFORM_PROJECT_ID }}
-          echo "PLATFORM_BRANCH_EXISTS=$(node ./scripts/check_platform_feature_branch.js --branch=${GITHUB_REF#refs/heads/} --id=${{ secrets.PLATFORM_PROJECT_ID }})" >> $GITHUB_ENV
-        
+          node ./scripts/check_platform_feature_branch.js --branch=${GITHUB_REF#refs/heads/} --branchFrom=dev --id=${{ secrets.PLATFORM_PROJECT_ID }}
+      
       - name: Spin up environment
-        if: ${{ env.PLATFORM_BRANCH_EXISTS == 'true' }}
         run: |
-          echo ${{ secrets.PLATFORM_PROJECT_ID }}
           ~/.platformsh/bin/platform project:get ${{ secrets.PLATFORM_PROJECT_ID }} platform-remote --environment=${GITHUB_REF#refs/heads/}
           cd platform-remote
           ~/.platformsh/bin/platform project:set-remote ${{ secrets.PLATFORM_PROJECT_ID }}
@@ -81,16 +79,16 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
       - run: npm install -g sitemap_utils jsonlint sitemap commander
       
-      - name: Download Sitemap
+      - name: Generate Sitemap
         run: |
-          flatten_sitemap --sitemap https://$( ~/.platformsh/bin/platform environment:info edge_hostname )/sitemap_index.xml --config .github/sitemap.json --limit 20 --randomize
-          cat .github/sitemap.json
+          ./scripts/sitemap.sh
 
       - name: Archive sitemap
         uses: actions/upload-artifact@v2
         with:
           name: sitemap
           path: .github/sitemap.json
+          retention-days: 1
 
   lighthouse:
     runs-on: ubuntu-latest
@@ -111,12 +109,13 @@ jobs:
         with:
           name: sitemap
       - name: Audit URLs using Lighthouse
-        run: npx lighthouse-batch -s $( jq -r '.urls | join(",")' sitemap.json ) --html --print
+        run: npx lighthouse-batch -s $( jq -r '.urls | join(",")' sitemap.json ) --params "--extra-headers=.github/lighthouse_headers.json --throttling.cpuSlowdownMultiplier=0 --preset=desktop" --html --print
       - name: Archive Lighthouse Results
         uses: actions/upload-artifact@v2
         with:
           name: results
           path: report/lighthouse
+          retention-days: 1
 
   gh_pages:
     runs-on: ubuntu-latest
@@ -245,6 +244,7 @@ jobs:
                     <thead>
                       <tr>
                         <th scope="col">Page</th>
+                        <th scope="col">Performance</th>
                         <th scope="col">Accessibility</th>
                         <th scope="col">SEO</th>
                         <th scope="col">Best Practices</th>
@@ -254,7 +254,7 @@ jobs:
                       <template x-for="page in data" :key="page.name">
                         <tr>
                           <th scope="row"><a x-bind:href="page.html" target="_blank" x-text="page.url"></a></th>
-                          <!--<td x-text="page.score" x-bind:class="page.score < 0.9 ? 'text-danger' : ''"></td>-->
+                          <td x-text="page.detail.performance" x-bind:class="page.detail.performance < 0.9 ? 'text-danger' : ''"></td>
                           <td x-text="page.detail.accessibility" x-bind:class="page.detail.accessibility < 0.9 ? 'text-danger' : ''"></td>
                           <td x-text="page.detail.seo" x-bind:class="page.detail.seo < 0.9 ? 'text-danger' : ''"></td>
                           <td x-text="page.detail['best-practices']" x-bind:class="page.detail['best-practices'] < 0.9 ? 'text-danger' : ''"></td>

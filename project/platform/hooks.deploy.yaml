@@ -18,9 +18,6 @@ fi
 
 ./scripts/cleanup-dev-db.sh
 
-#Import the base settings for the cache-control plugin
-php scripts/wp-import-config.php
-
 
 ################################
 ###     Project Specific    ###

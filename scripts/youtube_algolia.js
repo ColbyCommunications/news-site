@@ -34,12 +34,13 @@ async function main() {
     await index.clearObjects().wait();
 
     // begin youtube processing
+    let algoliaRecords = [];
     superagent
         .get(
             `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=1000&playlistId=UUhGBTvH9tUJbjxiaAAHGPqg&key=${args.apiKey}`
         )
-        .end((err, res) => {
-            res._body.items.forEach((item) => {
+        .then(async (res) => {
+            res.body.items.forEach((item) => {
                 // save local vars
                 let videoId = item.contentDetails.videoId;
                 let publishedAt = item.contentDetails.videoPublishedAt;
@@ -47,17 +48,25 @@ async function main() {
                 let description = item.snippet.description;
                 let thumbStandard = item.snippet.thumbnails.standard;
 
+                const pattern = '►';
+
                 let algoliaVideoRecord = {
+                    objectID: videoId,
                     videoId,
                     publishedDate: publishedAt,
                     title,
-                    description,
+                    description: description.slice(0, description.indexOf(pattern)),
                     thumbnail: thumbStandard,
                 };
 
-                index.saveObjects([algoliaVideoRecord]);
+                algoliaRecords.push(algoliaVideoRecord);
             });
+
+            await index.saveObjects(algoliaRecords).wait();
+        })
+        .catch((err) => {
+            console.log(err);
         });
 }
 
-main();
+main().catch(console.error);

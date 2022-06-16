@@ -1,10 +1,6 @@
 # Change the name property to the name of your project. Suggestions is to use the name of your project in Platform,
 # which is also the name/slug of your repository on gitlab
-<<<<<<< HEAD
 name: news
-=======
-name: sandbox
->>>>>>> e0d8ef033edeeb9982188a0bd61075bd228963c7
 recipe: wordpress
 config:
   webroot: web

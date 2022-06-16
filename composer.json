@@ -8,7 +8,7 @@
         "wpackagist-plugin/duplicate-post": "^4.3",
         "wpackagist-plugin/wordpress-seo": "^17.8",
         "wpackagist-plugin/cloudflare": "^4.5.1",
-        "johnpbloch/wordpress-core": "^5.8",
+        "johnpbloch/wordpress-core": "5.9.3",
         "johnpbloch/wordpress-core-installer": "^2.0",
         "newcity/newcity-wp-wysiwyg": "dev-elementor-compatible",
         "wpackagist-plugin/accordion-blocks": "^1.3",

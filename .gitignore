@@ -1,5 +1,6 @@
 #ignore packages installed by composer
 /vendor/
+node_modules
 #ignore core wordpress files installed by composer
 /web/wp/*
 !/web/wp/assign_story_type.php

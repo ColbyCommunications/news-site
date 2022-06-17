@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fe05e4850a11e3c60cb3f473eb6ea19",
+    "content-hash": "7a4ee3b57bbd736bde8570c1f8f16b0f",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",
@@ -91,6 +91,34 @@
             "time": "2020-03-09T08:34:59+00:00"
         },
         {
+            "name": "colbycommunications/advanced-custom-fields-pro",
+            "version": "5.11.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ColbyCommunications/advanced-custom-fields-pro.git",
+                "reference": "48af38e1aae394e6f259c5a163723abf9f3afe5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-48af38e1aae394e6f259c5a163723abf9f3afe5c-zip-156b29.zip",
+                "reference": "48af38e1aae394e6f259c5a163723abf9f3afe5c",
+                "shasum": "c3b7fb7452a62bb42d654898d9a84444fbdbc483"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Brandon Waltz",
+                    "email": "brandon.waltz@colby.edu"
+                }
+            ],
+            "description": "Premium ACF Pro plugin",
+            "homepage": "https://github.com/colbycommunications/advanced-custom-fields-pro",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2022-04-18T18:41:00+00:00"
+        },
+        {
             "name": "colbycommunications/colby-groups",
             "version": "dev-wp4-test",
             "source": {
@@ -130,7 +158,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "b2a78b625907d68a98cbeae1721d6588f766350f"
+                "reference": "297d23a4d980dc90f5ff10c44a4b2c4559579e03"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -175,7 +203,63 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-06-15T17:55:38+00:00"
+            "time": "2022-06-16T19:56:13+00:00"
+        },
+        {
+            "name": "colbycommunications/colby-ticket",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ColbyCommunications/colby-ticket.git",
+                "reference": "4de4cbfcfa62f4ffc64273910244b4f53b04bc48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.colby.edu/dist/colbycommunications/colby-ticket/colbycommunications-colby-ticket-4de4cbfcfa62f4ffc64273910244b4f53b04bc48-zip-e1cd7a.zip",
+                "reference": "4de4cbfcfa62f4ffc64273910244b4f53b04bc48",
+                "shasum": "9a5278503cb34ef9ed05e4943dbe7dd8b055439e"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Brandon Waltz",
+                    "email": "brandon.waltz@colby.edu"
+                }
+            ],
+            "description": "The ColbyTicket plugin for cloud sites",
+            "homepage": "https://github.com/colbycommunications/colby-ticket",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2022-04-18T15:47:45+00:00"
+        },
+        {
+            "name": "colbycommunications/elementor-pro",
+            "version": "3.5.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ColbyCommunications/elementor-pro.git",
+                "reference": "5d5ef9f064cc28c33af58cf9862d7b184a5b0e65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.colby.edu/dist/colbycommunications/elementor-pro/colbycommunications-elementor-pro-5d5ef9f064cc28c33af58cf9862d7b184a5b0e65-zip-66455b.zip",
+                "reference": "5d5ef9f064cc28c33af58cf9862d7b184a5b0e65",
+                "shasum": "e7ebe89376361d56cd7dac2c6cbdfae8ea21d04d"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Brandon Waltz",
+                    "email": "brandon.waltz@colby.edu"
+                }
+            ],
+            "description": "Premium Elementor Pro plugin",
+            "homepage": "https://github.com/colbycommunications/elementor-pro",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2022-04-18T14:24:32+00:00"
         },
         {
             "name": "composer/ca-bundle",

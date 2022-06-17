@@ -21,7 +21,6 @@
   allow: true
   rules: !include web.locations.root.rules.yaml
 
-
 ################################
 ###        WORDPRESS        ###
 ###############################

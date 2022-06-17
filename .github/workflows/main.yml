@@ -1,8 +1,8 @@
-name: Run Tests - Dev
+name: Run Tests - Master
 on:
   push:
     branches:
-      - 'dev'
+      - 'master'
 env:
   PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
   WEBMASTER_GITHUB_ACTIONS_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
@@ -36,13 +36,13 @@ jobs:
           done 2>/dev/null >> ~/.ssh/known_hosts
           cat ~/.ssh/known_hosts
   
-      - name: Check Environment Exists
-        run: |
-          ~/.platformsh/bin/platform project:set-remote ${{ secrets.PLATFORM_PROJECT_ID }}
-          node ./scripts/check_platform_feature_branch.js --branch=${GITHUB_REF#refs/heads/} --branchFrom=master --id=${{ secrets.PLATFORM_PROJECT_ID }}
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://npm.pkg.github.com'
         
       - name: Spin up environment
-
         run: |
           ~/.platformsh/bin/platform project:get ${{ secrets.PLATFORM_PROJECT_ID }} platform-remote --environment=${GITHUB_REF#refs/heads/}
           cd platform-remote
@@ -70,12 +70,30 @@ jobs:
       - run: npm install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
-      - run: npm install -g sitemap_utils jsonlint sitemap commander
+      - run: npm install -g sitemap_utils
+
+      - name: Set Domain ENV
+        run: |
+          echo "DOMAIN=$( ~/.platformsh/bin/platform domains --format=plain --no-header --columns=name )" >> $GITHUB_ENV
+          echo $DOMAIN
+
+      - name: Generate Sitemap
+        if: ${{ contains(env.DOMAIN, 'colby.edu')}}
+        run: |
+          ./scripts/sitemap_master.sh
+          flatten_sitemap --sitemap https://$( ~/.platformsh/bin/platform domains --format=plain --no-header --columns=name )/sitemap_index.xml --config .github/sitemap.json --limit 25 --randomize
       
       - name: Generate Sitemap
+        if: ${{ !contains(env.DOMAIN, 'colby.edu')}}
         run: |
+          run: |
           ./scripts/sitemap.sh
-
+      
+      - name: Warm Cache
+        if: ${{ contains(env.DOMAIN, 'colby.edu')}}
+        run: |
+          node ./scripts/warm_cache.js
+          
       - name: Archive sitemap
         uses: actions/upload-artifact@v2
         with:

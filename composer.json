@@ -23,7 +23,6 @@
         "wpackagist-plugin/regenerate-thumbnails": "^3.1",
         "wpackagist-plugin/svg-support": "^2.3",
         "wpackagist-plugin/wp-cfm": "^1.7",
-        "wpackagist-plugin/wp-graphql": "^1.6.2",
         "wpackagist-plugin/wp-nested-pages": "^3.1",
         "wpackagist-theme/twentytwentyone": "^1.4",
         "wpackagist-plugin/term-management-tools": "^2.0.1",

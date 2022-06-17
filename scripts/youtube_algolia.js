@@ -49,13 +49,15 @@ async function main() {
                 let thumbStandard = item.snippet.thumbnails.standard;
 
                 const pattern = '►';
+                finalDescription = description.slice(0, description.indexOf(pattern));
+                finalDescription = finalDescription.slice(0, finalDescription.indexOf('https://'));
 
                 let algoliaVideoRecord = {
                     objectID: videoId,
                     videoId,
                     publishedDate: publishedAt,
                     title,
-                    description: description.slice(0, description.indexOf(pattern)),
+                    description: finalDescription,
                     thumbnail: thumbStandard,
                 };
 

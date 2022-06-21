@@ -13,9 +13,6 @@ curl -sS https://platform.sh/cli/installer | php
 ###        WORDPRESS        ###
 ###############################
 
-# install redis cache
-./scripts/install-redis.sh 5.1.1
-
 # create a symlink to our actual file in the root of mu-plugins
 ./scripts/setup-mu-plugins.sh
 

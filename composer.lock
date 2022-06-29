@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a4ee3b57bbd736bde8570c1f8f16b0f",
+    "content-hash": "4e3dc684a4ff657d46c414e803f1b2da",
     "packages": [
         {
             "name": "ahebrank/wp-frontback",
@@ -154,15 +154,11 @@
         },
         {
             "name": "colbycommunications/colby-news-theme",
-            "version": "dev-news-2.1",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-<<<<<<< HEAD
                 "reference": "1e3785a68b5ad6f8fb108e5db40bbaea99ab9375"
-=======
-                "reference": "b0689704a772c6e9ec2c38446e3b477cc1c6782d"
->>>>>>> b05a68373c83a8f12d54ac5fd854a1ad2599e900
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -207,11 +203,7 @@
             "keywords": [
                 "wordpress"
             ],
-<<<<<<< HEAD
             "time": "2022-06-29T00:46:22+00:00"
-=======
-            "time": "2022-06-28T18:46:19+00:00"
->>>>>>> b05a68373c83a8f12d54ac5fd854a1ad2599e900
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -7762,5 +7754,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

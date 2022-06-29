@@ -18,3 +18,7 @@ backup:
 ###     Project Specific    ###
 ###############################
 # Add any additional project specific cron jobs you need after this line
+
+wp_cron:
+  spec: '*/5 * * * *'
+  cmd: wget -q -O - https://news-2-0-l5zba3i-4nvswumupeimi.us-4.platformsh.site/wp/wp-cron.php?doing_wp_cron

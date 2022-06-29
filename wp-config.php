@@ -139,7 +139,7 @@ if (false !== $strRelationships = getenv('PLATFORM_RELATIONSHIPS')) {
     }
 } else {
     // You can create a wp-config-local.php file with local configuration.
-    if (file_exists(dirname(__FILE__) . '/wp-config-local.php') ) {
+    if (file_exists(dirname(__FILE__) . '/wp-config-local.php')) {
         include dirname(__FILE__) . '/wp-config-local.php';
     }
 }
@@ -147,7 +147,7 @@ if (false !== $strRelationships = getenv('PLATFORM_RELATIONSHIPS')) {
 // Define wp-content directory outside of WordPress core directory
 define('WP_HOME', $site_scheme . '://' . $site_host);
 define('WP_SITEURL', WP_HOME . '/wp');
-
+define('DISABLE_WP_CRON', true);
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/web/wp-content');
 
 $strContentURL =  WP_HOME . '/wp-content';
@@ -193,11 +193,12 @@ ini_set('pcre.backtrack_limit', 200000);
 ini_set('pcre.recursion_limit', 200000);
 
 /**
- * Absolute path to the WordPress directory. 
+ * Absolute path to the WordPress directory.
 */
-if (!defined('ABSPATH') ) {
+if (!defined('ABSPATH')) {
     define('ABSPATH', dirname(__FILE__) . '/');
 }
+
 
 /**
  * Sets up WordPress vars and included files.

@@ -4,32 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e3dc684a4ff657d46c414e803f1b2da",
+    "content-hash": "d233344f7f9c515fc3bd609515d8fc12",
     "packages": [
-        {
-            "name": "ahebrank/wp-frontback",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ahebrank/wp-frontback.git",
-                "reference": "04dfd5d7de11956c219eb1163095e1088a3284b4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ahebrank/wp-frontback/zipball/04dfd5d7de11956c219eb1163095e1088a3284b4",
-                "reference": "04dfd5d7de11956c219eb1163095e1088a3284b4",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Frontback issue reporting widget integration",
-            "support": {
-                "issues": "https://github.com/ahebrank/wp-frontback/issues",
-                "source": "https://github.com/ahebrank/wp-frontback/tree/master"
-            },
-            "time": "2021-05-03T16:46:48+00:00"
-        },
         {
             "name": "altorouter/altorouter",
             "version": "2.0.2",
@@ -119,46 +95,12 @@
             "time": "2022-04-18T18:41:00+00:00"
         },
         {
-            "name": "colbycommunications/colby-groups",
-            "version": "dev-wp4-test",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ColbyCommunications/colby-groups",
-                "reference": "65a6e26b6a1ad68d298b9e1d089cb324a03fc704"
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "automattic/vipwpcs": "^2.0",
-                "dealerdirect/phpcodesniffer-composer-installer": "*",
-                "phpunit/phpunit": "^6.5",
-                "wp-coding-standards/wpcs": "^2.1"
-            },
-            "type": "wordpress-plugin",
-            "authors": [
-                {
-                    "name": "Keith McGlauflin",
-                    "email": "keith.mcglauflin@colby.edu"
-                },
-                {
-                    "name": "Brandon Waltz",
-                    "email": "brandon.waltz@colby.edu"
-                }
-            ],
-            "description": "Colby user group management plugin",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2020-02-12T18:47:50+00:00"
-        },
-        {
             "name": "colbycommunications/colby-news-theme",
-            "version": "dev-dev",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "b050cb47e7182b740ffa1b5d464d260cb49d1c87"
+                "reference": "6fdf284a296fdfff80a87bdf07e852813b7a6039"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -203,7 +145,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-06-29T20:41:30+00:00"
+            "time": "2022-06-30T09:27:16+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -964,44 +906,6 @@
                 }
             ],
             "time": "2022-02-25T21:32:43+00:00"
-        },
-        {
-            "name": "devgeniem/wp-redis-object-cache-dropin",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/devgeniem/wp-redis-object-cache-dropin.git",
-                "reference": "973a640d88a72214c54d24130f2ebfd720f3e93f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/devgeniem/wp-redis-object-cache-dropin/zipball/973a640d88a72214c54d24130f2ebfd720f3e93f",
-                "reference": "973a640d88a72214c54d24130f2ebfd720f3e93f",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "koodimonni/composer-dropin-installer": ">=1.0.1"
-            },
-            "type": "wordpress-dropin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Till Krüss",
-                    "homepage": "https://till.kruss.me/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A persistent object cache backend for WordPress powered by Redis. Supports Predis, PhpRedis, HHVM, replication and clustering.",
-            "homepage": "https://github.com/devgeniem/wp-redis-object-cache-dropin",
-            "support": {
-                "issues": "https://github.com/devgeniem/wp-redis-object-cache-dropin/issues",
-                "source": "https://github.com/devgeniem/wp-redis-object-cache-dropin/tree/1.6.0"
-            },
-            "time": "2019-11-29T09:19:20+00:00"
         },
         {
             "name": "eftec/bladeone",
@@ -1823,54 +1727,6 @@
             "time": "2022-04-13T08:02:27+00:00"
         },
         {
-            "name": "koodimonni/composer-dropin-installer",
-            "version": "1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Koodimonni/Composer-Dropin-Installer.git",
-                "reference": "9596ef8f50cbba2cdc707ca3b1f5e4a0e9fa7e7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/9596ef8f50cbba2cdc707ca3b1f5e4a0e9fa7e7e",
-                "reference": "9596ef8f50cbba2cdc707ca3b1f5e4a0e9fa7e7e",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0 | ^2.0",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Koodimonni\\Composer\\Dropin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Koodimonni\\Composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "WTFPL"
-            ],
-            "authors": [
-                {
-                    "name": "Onni Hakala",
-                    "email": "onni@keksi.io",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Install packages or a few files from packages into custom paths without overwriting existing stuff.",
-            "support": {
-                "issues": "https://github.com/Koodimonni/Composer-Dropin-Installer/issues",
-                "source": "https://github.com/Koodimonni/Composer-Dropin-Installer/tree/1.4"
-            },
-            "time": "2022-02-02T11:42:57+00:00"
-        },
-        {
             "name": "masterminds/html5",
             "version": "2.7.5",
             "source": {
@@ -2086,16 +1942,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.59.0",
+            "version": "2.59.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "9cea2f72585a46d0651ee6d4c8c8f752e78c16c6"
+                "reference": "a9000603ea337c8df16cc41f8b6be95a65f4d0f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/9cea2f72585a46d0651ee6d4c8c8f752e78c16c6",
-                "reference": "9cea2f72585a46d0651ee6d4c8c8f752e78c16c6",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a9000603ea337c8df16cc41f8b6be95a65f4d0f5",
+                "reference": "a9000603ea337c8df16cc41f8b6be95a65f4d0f5",
                 "shasum": ""
             },
             "require": {
@@ -2184,7 +2040,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-26T20:26:59+00:00"
+            "time": "2022-06-29T21:43:55+00:00"
         },
         {
             "name": "newcity/newcity-wp-wysiwyg",
@@ -2269,73 +2125,6 @@
             "time": "2022-05-31T20:59:12+00:00"
         },
         {
-            "name": "opis/json-schema",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/opis/json-schema.git",
-                "reference": "39d8072be8657a329a284339994401066406c43b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/opis/json-schema/zipball/39d8072be8657a329a284339994401066406c43b",
-                "reference": "39d8072be8657a329a284339994401066406c43b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "ext-bcmath": "*",
-                "ext-intl": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "opis/string": "^1.4",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^9.4"
-            },
-            "suggest": {
-                "opis/string": "A standalone library for manipulating multibyte strings"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Opis\\JsonSchema\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Sorin Sarca",
-                    "email": "sarca_sorin@hotmail.com"
-                },
-                {
-                    "name": "Marius Sarca",
-                    "email": "marius.sarca@gmail.com"
-                }
-            ],
-            "description": "Json Schema Validator",
-            "homepage": "http://www.opis.io/json-schema",
-            "keywords": [
-                "json",
-                "schema",
-                "validation",
-                "validator"
-            ],
-            "support": {
-                "issues": "https://github.com/opis/json-schema/issues",
-                "source": "https://github.com/opis/json-schema/tree/1.1.0"
-            },
-            "time": "2021-04-14T20:02:50+00:00"
-        },
-        {
             "name": "phpoption/phpoption",
             "version": "1.8.1",
             "source": {
@@ -2405,47 +2194,6 @@
                 }
             ],
             "time": "2021-12-04T23:24:31+00:00"
-        },
-        {
-            "name": "pristas-peter/wp-graphql-gutenberg",
-            "version": "v0.3.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pristas-peter/wp-graphql-gutenberg.git",
-                "reference": "93ea1aaf7e24ca09e79d7a34dcabea9797a1f3ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pristas-peter/wp-graphql-gutenberg/zipball/93ea1aaf7e24ca09e79d7a34dcabea9797a1f3ea",
-                "reference": "93ea1aaf7e24ca09e79d7a34dcabea9797a1f3ea",
-                "shasum": ""
-            },
-            "require": {
-                "opis/json-schema": "^1.0",
-                "voku/simple_html_dom": "4.7.17"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
-                "phpcompatibility/phpcompatibility-wp": "2.1.0",
-                "squizlabs/php_codesniffer": "3.5.4",
-                "wp-coding-standards/wpcs": "2.1.1"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "psr-4": {
-                    "WPGraphqlGutenberg\\": "src/"
-                },
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Query gutenberg blocks with wp-graphql",
-            "support": {
-                "issues": "https://github.com/pristas-peter/wp-graphql-gutenberg/issues",
-                "source": "https://github.com/pristas-peter/wp-graphql-gutenberg/tree/v0.3.12"
-            },
-            "time": "2022-05-18T17:14:57+00:00"
         },
         {
             "name": "psr/container",
@@ -3171,72 +2919,6 @@
                 }
             ],
             "time": "2022-06-26T13:00:04+00:00"
-        },
-        {
-            "name": "symfony/css-selector",
-            "version": "v5.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "b0a190285cd95cb019237851205b8140ef6e368e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/b0a190285cd95cb019237851205b8140ef6e368e",
-                "reference": "b0a190285cd95cb019237851205b8140ef6e368e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-php80": "^1.16"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\CssSelector\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Jean-François Simon",
-                    "email": "jeanfrancois.simon@sensiolabs.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Converts CSS selectors to XPath expressions",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v5.4.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-01-02T09:53:40+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4853,87 +4535,6 @@
                 }
             ],
             "time": "2021-12-12T23:22:04+00:00"
-        },
-        {
-            "name": "voku/simple_html_dom",
-            "version": "4.7.17",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/voku/simple_html_dom.git",
-                "reference": "804aca422f1fe0104b1320ca09fd06cd0062782c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/804aca422f1fe0104b1320ca09fd06cd0062782c",
-                "reference": "804aca422f1fe0104b1320ca09fd06cd0062782c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "ext-simplexml": "*",
-                "php": ">=7.0.0",
-                "symfony/css-selector": "~3.0 || ~4.0 || ~5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0"
-            },
-            "suggest": {
-                "voku/portable-utf8": "If you need e.g. UTF-8 fixed output."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "voku\\helper\\": "src/voku/helper/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "dimabdc",
-                    "email": "support@titor.ru",
-                    "homepage": "http://github.com/dimabdc",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Lars Moelleken",
-                    "homepage": "http://www.moelleken.org/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Simple HTML DOM package.",
-            "homepage": "http://simplehtmldom.sourceforge.net/",
-            "keywords": [
-                "HTML Parser",
-                "dom",
-                "php dom"
-            ],
-            "support": {
-                "issues": "https://github.com/voku/simple_html_dom/issues",
-                "source": "https://github.com/voku/simple_html_dom/tree/4.7.17"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/moelleken",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/voku",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/voku",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/voku/simple_html_dom",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-04-09T21:20:43+00:00"
         },
         {
             "name": "wp-cli/cache-command",
@@ -7032,103 +6633,6 @@
             "time": "2022-01-10T18:37:52+00:00"
         },
         {
-            "name": "wp-graphql/wp-graphiql",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wp-graphql/wp-graphiql.git",
-                "reference": "543617f1b257cd9bbc0682628bb32bd1e60cd959"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wp-graphql/wp-graphiql/zipball/543617f1b257cd9bbc0682628bb32bd1e60cd959",
-                "reference": "543617f1b257cd9bbc0682628bb32bd1e60cd959",
-                "shasum": ""
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Jason Bahl",
-                    "email": "jasonbahl@mac.com"
-                }
-            ],
-            "description": "GraphiQL IDE in the WP-Admin. Works with the WPGraphQL plugin. https://github.com/wp-graphql/wp-graphql",
-            "support": {
-                "issues": "https://github.com/wp-graphql/wp-graphiql/issues",
-                "source": "https://github.com/wp-graphql/wp-graphiql/tree/v1.0.1"
-            },
-            "abandoned": true,
-            "time": "2019-10-23T22:33:08+00:00"
-        },
-        {
-            "name": "wp-graphql/wp-graphql-acf",
-            "version": "v0.5.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wp-graphql/wp-graphql-acf.git",
-                "reference": "0ac0529697d67192ce6b0e9fc27c5dfb3807250c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wp-graphql/wp-graphql-acf/zipball/0ac0529697d67192ce6b0e9fc27c5dfb3807250c",
-                "reference": "0ac0529697d67192ce6b0e9fc27c5dfb3807250c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "codeception/module-asserts": "^1.0",
-                "codeception/module-cli": "^1.0",
-                "codeception/module-db": "^1.0",
-                "codeception/module-filesystem": "^1.0",
-                "codeception/module-phpbrowser": "^1.0",
-                "codeception/module-rest": "^1.2",
-                "codeception/module-webdriver": "^1.0",
-                "codeception/util-universalframework": "^1.0",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
-                "lucatume/wp-browser": "^2.4",
-                "phpcompatibility/phpcompatibility-wp": "2.1.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^0.12.64",
-                "phpunit/phpunit": "^8.5",
-                "simpod/php-coveralls-mirror": "^3.0",
-                "squizlabs/php_codesniffer": "3.5.4",
-                "szepeviktor/phpstan-wordpress": "^0.7.1",
-                "wp-coding-standards/wpcs": "2.1.1",
-                "wp-graphql/wp-graphql-testcase": "~2.1"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "psr-4": {
-                    "WPGraphQL\\ACF\\": "src/"
-                },
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "jasonbahl",
-                    "email": "jasonbahl@mac.com"
-                }
-            ],
-            "description": "Advanced Custom Fields bindings for wp-graphql",
-            "support": {
-                "issues": "https://github.com/wp-graphql/wp-graphql-acf/issues",
-                "source": "https://github.com/wp-graphql/wp-graphql-acf/tree/v0.5.3"
-            },
-            "time": "2021-07-19T22:12:00+00:00"
-        },
-        {
             "name": "wpackagist-plugin/accordion-blocks",
             "version": "1.5.0",
             "source": {
@@ -7217,60 +6721,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/block-manager/"
-        },
-        {
-            "name": "wpackagist-plugin/cache-control",
-            "version": "2.2.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/cache-control/",
-                "reference": "tags/2.2.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cache-control.2.2.5.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/cache-control/"
-        },
-        {
-            "name": "wpackagist-plugin/capability-manager-enhanced",
-            "version": "2.3.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/capability-manager-enhanced/",
-                "reference": "tags/2.3.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.2.3.2.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/capability-manager-enhanced/"
-        },
-        {
-            "name": "wpackagist-plugin/classic-editor",
-            "version": "1.6.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/classic-editor/",
-                "reference": "tags/1.6.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.2.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
             "name": "wpackagist-plugin/cloudflare",
@@ -7507,24 +6957,6 @@
             "homepage": "https://wordpress.org/plugins/svg-support/"
         },
         {
-            "name": "wpackagist-plugin/tablepress",
-            "version": "1.14",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/tablepress/",
-                "reference": "tags/1.14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tablepress.1.14.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/tablepress/"
-        },
-        {
             "name": "wpackagist-plugin/term-management-tools",
             "version": "2.0.1",
             "source": {
@@ -7577,42 +7009,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-cfm/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-crontrol",
-            "version": "1.12.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
-                "reference": "tags/1.12.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.12.0.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-crontrol/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-graphql",
-            "version": "1.8.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-graphql/",
-                "reference": "tags/1.8.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.8.6.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-graphql/"
         },
         {
             "name": "wpackagist-plugin/wp-nested-pages",
@@ -7669,60 +7065,6 @@
             "homepage": "https://wordpress.org/plugins/wp-search-with-algolia/"
         },
         {
-            "name": "wpackagist-plugin/yoast-test-helper",
-            "version": "1.17",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/yoast-test-helper/",
-                "reference": "tags/1.17"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/yoast-test-helper.1.17.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/yoast-test-helper/"
-        },
-        {
-            "name": "wpackagist-theme/hello-elementor",
-            "version": "2.5.0",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/hello-elementor/",
-                "reference": "2.5.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/hello-elementor.2.5.0.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/hello-elementor/"
-        },
-        {
-            "name": "wpackagist-theme/twentyseventeen",
-            "version": "2.9",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
-                "reference": "2.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyseventeen.2.9.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentyseventeen/"
-        },
-        {
             "name": "wpackagist-theme/twentytwentyone",
             "version": "1.6",
             "source": {
@@ -7745,9 +7087,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ahebrank/wp-frontback": 20,
-        "colbycommunications/colby-news-theme": 20,
-        "colbycommunications/colby-groups": 20,
         "newcity/newcity-wp-wysiwyg": 20
     },
     "prefer-stable": false,

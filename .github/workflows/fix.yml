@@ -1,4 +1,4 @@
-name: Run Tests - Feature
+name: Run Tests - Fix
 on:
   push:
     branches:

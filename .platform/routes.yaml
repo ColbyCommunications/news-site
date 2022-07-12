@@ -20,6 +20,9 @@
         '^/wp-admin/(.*)':
           to: "/wp/wp-admin/$1"
           regexp: true
+        '^/colby-magazine/?$':
+          to: 'https://magazine.colby.edu/'
+          regexp: true
 
 # *ALL* www.* requests should be redirected back to primary domain
 "https://www.{all}/":

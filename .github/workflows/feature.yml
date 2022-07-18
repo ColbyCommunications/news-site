@@ -3,8 +3,7 @@ on:
   push:
     branches:
       - '*'
-      - '!dev'
-      - '!master'
+      
 env:
   PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
   WEBMASTER_GITHUB_ACTIONS_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}

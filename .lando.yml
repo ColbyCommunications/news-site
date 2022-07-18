@@ -1,5 +1,6 @@
 # Change the name property to the name of your project. Suggestions is to use the name of your project in Platform,
 # which is also the name/slug of your repository on gitlab
+# news
 name: news
 recipe: wordpress
 config:
@@ -13,7 +14,7 @@ env_file:
 
 services:
   appserver:
-    type: php:7.4
+    type: php:8.0
     build:
       # Intall the platform.sh CLI and make sure it is up to date.
       - "./scripts/lando-platform-install.sh"

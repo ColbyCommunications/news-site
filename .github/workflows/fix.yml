@@ -1,11 +1,8 @@
-name: Run Tests - Feature
+name: Run Tests - Fix
 on:
   push:
     branches:
-      - '*'
-      - '!dev'
-      - '!master'
-      - '!fix/**'
+      - 'fix/**'
 env:
   PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
   WEBMASTER_GITHUB_ACTIONS_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
@@ -48,7 +45,7 @@ jobs:
       - name: Check Environment Exists
         run: |
           ~/.platformsh/bin/platform project:set-remote ${{ secrets.PLATFORM_PROJECT_ID }}
-          node ./scripts/check_platform_feature_branch.js --branch=${GITHUB_REF#refs/heads/} --branchFrom=dev --id=${{ secrets.PLATFORM_PROJECT_ID }}
+          node ./scripts/check_platform_feature_branch.js --branch=${GITHUB_REF#refs/heads/} --branchFrom=master --id=${{ secrets.PLATFORM_PROJECT_ID }}
       
       - name: Spin up environment
         if: "!contains(github.event.head_commit.message, '[skip platform]')"

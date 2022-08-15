@@ -2,7 +2,7 @@ name: Run Tests - Feature
 on:
   push:
     branches:
-      - '*'
+      - '*/**'
       - '!dev'
       - '!master'
       - '!fix/**'

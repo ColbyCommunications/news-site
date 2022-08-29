@@ -3,7 +3,7 @@
     "description": "Configuration project for the news.colby.edu site",
     "type": "project",
     "require": {
-        "colbycommunications/colby-news-theme": "dev-fix/accessibility",
+        "colbycommunications/colby-news-theme": "dev-master",
         "wpackagist-plugin/header-footer": "^3.1.3",
         "wpackagist-plugin/duplicate-post": "^4.3",
         "wpackagist-plugin/wordpress-seo": "^19.3",

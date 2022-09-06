@@ -1,6 +1,5 @@
 name: Youtube Algolia
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 4 * * *"
 env:

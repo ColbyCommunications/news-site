@@ -19,6 +19,7 @@ curl -sS https://platform.sh/cli/installer | php
 # fix mu-plugin symlinks for irregular plugins
 ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
 ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wp-search-with-algolia/algolia.php /app/web/wp-content/mu-plugins/algolia.php
+./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo-premium/wp-seo-premium.php /app/web/wp-content/mu-plugins/wp-seo-premium.php
 
 
 ################################

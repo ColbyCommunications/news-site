@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eafc84d5c4e5fc699b6710bd145a1bfb",
+    "content-hash": "d8323289140c9879fdc3162d5c822714",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -1052,6 +1052,7 @@
                 "issues": "https://github.com/gbuckingham89/youtube-rss-parser/issues",
                 "source": "https://github.com/gbuckingham89/youtube-rss-parser"
             },
+            "abandoned": true,
             "time": "2021-03-12T11:05:16+00:00"
         },
         {

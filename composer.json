@@ -65,7 +65,6 @@
         "installer-paths": {
             "web/wp-content/mu-plugins/{$name}": [
                 "type:wordpress-muplugin",
-                "wpackagist-plugin/wordpress-seo",
                 "colbycommunications/wordpress-seo-premium",
                 "colbycommunications/wpseo-news",
                 "wpackagist-plugin/wp-search-with-algolia"

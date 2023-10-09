@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8126c5e6d1b037cd3c254497aa860322",
+    "content-hash": "27b48115c28c298ce1872bcdfdeb1721",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -99,7 +99,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "4563b2273ab588d04b858c6df0721f11d408bf52"
+                "reference": "77e79a759a7c937c5ec6e40463f936f61fbc5d58"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -144,7 +144,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2023-10-06T13:17:28+00:00"
+            "time": "2023-10-09T18:04:07+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -7095,15 +7095,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "2.2.0",
+            "version": "2.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/2.2.0"
+                "reference": "tags/2.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.6.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

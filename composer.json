@@ -4,7 +4,6 @@
     "type": "project",
     "require": {
         "colbycommunications/colby-news-theme": "dev-dev",
-        "wpackagist-theme/twentytwentythree": "1.2",
         "wpackagist-plugin/header-footer": "3.2.5",
         "wpackagist-plugin/duplicate-post": "4.5",
         "wpackagist-plugin/wordpress-seo": "20.7",

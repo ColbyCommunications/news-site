@@ -37,7 +37,7 @@
         "colbycommunications/colby-ticket": "1.0.1",
         "wpackagist-plugin/wp-search-with-algolia": "2.6.1",
         "vlucas/phpdotenv": "^5.4",
-        "colbycommunications/wordpress-seo-premium": "20.7",
+        "colbycommunications/wordpress-seo-premium": "21.7",
         "colbycommunications/wpseo-news": "13.1",
         "wpackagist-plugin/tinymce-advanced": "5.9.0"
     },

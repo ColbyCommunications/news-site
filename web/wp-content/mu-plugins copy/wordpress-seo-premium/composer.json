@@ -1,0 +1,15 @@
+{
+    "name": "colbycommunications/wordpress-seo-premium",
+    "description": "Premium Yoast plugin",
+    "keywords": [
+        "wordpress"
+    ],
+    "type": "wordpress-plugin",
+    "homepage": "https://github.com/colbycommunications/wordpress-seo-premium",
+    "authors": [
+        {
+            "name": "Brandon Waltz",
+            "email": "brandon.waltz@colby.edu"
+        }
+    ]
+}

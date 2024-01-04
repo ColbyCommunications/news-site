@@ -1,0 +1,1 @@
+/app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php

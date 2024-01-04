@@ -67,7 +67,6 @@
             "web/wp-content/mu-plugins/{$name}": [
                 "type:wordpress-muplugin",
                 "colbycommunications/wordpress-seo-premium",
-                "colbycommunications/wpseo-news",
                 "wpackagist-plugin/wp-search-with-algolia"
             ],
             "web/wp-content/plugins/{$name}": [

@@ -1,1 +1,0 @@
-/app/web/wp-content/mu-plugins/wp-search-with-algolia/algolia.php

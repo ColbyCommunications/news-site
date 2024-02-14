@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e692cfbe43d4075c37ea6ec8223116d8",
+    "content-hash": "51aeb62da8ea3955784ce61e3b02e78b",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -7186,15 +7186,15 @@
         },
         {
             "name": "wpackagist-plugin/siteimprove",
-            "version": "2.0.5",
+            "version": "1.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/siteimprove/",
-                "reference": "tags/2.0.5"
+                "reference": "tags/1.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/siteimprove.2.0.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/siteimprove.1.2.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

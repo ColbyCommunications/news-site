@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "245c48f87041704d82521fc6f45af56e",
+    "content-hash": "72d7713db362c326b4cd24f2375a9970",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -164,11 +164,11 @@
         },
         {
             "name": "colbycommunications/colby-news-theme",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "e1f5de203f0d5d78f0ac940d116b8cd33dc8f0a1"
+                "reference": "e987076438709896e01429d6d7929199be1b27f8"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -213,7 +213,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-03-07T20:32:44+00:00"
+            "time": "2024-03-07T20:45:16+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",

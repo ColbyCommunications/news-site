@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae9c6634d89d77e6cd328a340670be9d",
+    "content-hash": "b26c98e48d517f496ceae11a6915a643",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -7200,24 +7200,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/reusable-blocks-extended/"
-        },
-        {
-            "name": "wpackagist-plugin/siteimprove",
-            "version": "1.2.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/siteimprove/",
-                "reference": "tags/1.2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/siteimprove.1.2.1.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/siteimprove/"
         },
         {
             "name": "wpackagist-plugin/svg-support",

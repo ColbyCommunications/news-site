@@ -3,7 +3,7 @@
     "description": "Configuration project for the news.colby.edu site",
     "type": "project",
     "require": {
-        "colbycommunications/colby-news-theme": "dev-dev",
+        "colbycommunications/colby-news-theme": "1.9.7",
         "wpackagist-plugin/header-footer": "3.2.7",
         "wpackagist-plugin/duplicate-post": "4.5",
         "wpackagist-plugin/wordpress-seo": "21.7",
@@ -27,6 +27,7 @@
         "wpackagist-plugin/convert-to-blocks": "1.2.2",
         "wpackagist-plugin/reusable-blocks-extended": "0.9.1",
         "wpackagist-plugin/wp-saml-auth": "2.1.4",
+        "wpackagist-plugin/siteimprove": "1.2.1",
         "wp-cli/wp-cli-bundle": "^2.6",
         "psy/psysh": "^0.11.2",
         "colbycommunications/advanced-custom-fields-pro": "6.2.5",

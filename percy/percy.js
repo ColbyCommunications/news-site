@@ -16,7 +16,7 @@ const scrollToBottom = require('scroll-to-bottomjs');
   // Test Page
   const testPage = await browser.newPage();
   await testPage.goto('https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/news-release-test-story/');
-  await testPage.waitForSelector('img');
+  await testPage.waitForNetworkIdle();
   await testPage.evaluate(scrollToBottom, scrollOptions);
 
   await percySnapshot(testPage, 'Snapshot of test page', {
@@ -28,7 +28,7 @@ const scrollToBottom = require('scroll-to-bottomjs');
   await testPage2.goto(
     'https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/scholarship-stories-about-colby-faculty-in-2023/'
   );
-  await testPage.waitForSelector('img');
+  await testPage2.waitForNetworkIdle();
   await testPage2.evaluate(scrollToBottom, scrollOptions);
 
   await percySnapshot(testPage2, 'Snapshot of test page 2', {
@@ -40,7 +40,7 @@ const scrollToBottom = require('scroll-to-bottomjs');
   await testPage3.goto(
     'https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/an-adrenaline-junkie-with-a-passion-for-filmmaking/'
   );
-  await testPage.waitForSelector('img');
+  await testPage3.waitForNetworkIdle();
   await testPage3.evaluate(scrollToBottom, scrollOptions);
 
   await percySnapshot(testPage3, 'Snapshot of test page 3', {
@@ -65,7 +65,7 @@ const scrollToBottom = require('scroll-to-bottomjs');
   const contactPage = await browser.newPage();
 
   await contactPage.goto('https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/contact/');
-
+  await contactPage.waitForNetworkIdle();
   await percySnapshot(contactPage, 'Snapshot of contact page');
 
   const resourcesPage = await browser.newPage();

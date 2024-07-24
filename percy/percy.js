@@ -16,36 +16,39 @@ const scrollToBottom = require('scroll-to-bottomjs');
   // Test Page
   const testPage = await browser.newPage();
   await testPage.goto('https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/news-release-test-story/');
-  await testPage.waitForSelector('img');
-  await testPage.evaluate(scrollToBottom, scrollOptions);
+  setTimeout(async () => {
+    await testPage.evaluate(scrollToBottom, scrollOptions);
 
-  await percySnapshot(testPage, 'Snapshot of test page', {
-    percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
-  });
+    await percySnapshot(testPage, 'Snapshot of test page', {
+      percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
+    });
+  }, 3000);
 
   // Test Page 2
   const testPage2 = await browser.newPage();
   await testPage2.goto(
     'https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/scholarship-stories-about-colby-faculty-in-2023/'
   );
-  await testPage2.waitForSelector('img');
-  await testPage2.evaluate(scrollToBottom, scrollOptions);
+  setTimeout(async () => {
+    await testPage2.evaluate(scrollToBottom, scrollOptions);
 
-  await percySnapshot(testPage2, 'Snapshot of test page 2', {
-    percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
-  });
+    await percySnapshot(testPage2, 'Snapshot of test page 2', {
+      percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
+    });
+  }, 3000);
 
   // Test Page 3
   const testPage3 = await browser.newPage();
   await testPage3.goto(
     'https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/an-adrenaline-junkie-with-a-passion-for-filmmaking/'
   );
-  await testPage3.waitForSelector('img');
-  await testPage3.evaluate(scrollToBottom, scrollOptions);
+  setTimeout(async () => {
+    await testPage3.evaluate(scrollToBottom, scrollOptions);
 
-  await percySnapshot(testPage3, 'Snapshot of test page 3', {
-    percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
-  });
+    await percySnapshot(testPage3, 'Snapshot of test page 3', {
+      percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
+    });
+  }, 3000);
 
   // Main Menu
   const homePage = await browser.newPage();

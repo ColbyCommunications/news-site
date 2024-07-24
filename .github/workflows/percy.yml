@@ -36,4 +36,7 @@ jobs:
           node-version: '16.x'
       - run: ~/.platformsh/bin/platform redeploy -y
       - run: npm install
+    - name: Set Up Chrome
+      uses: browser-actions/setup-chrome@v1
+    - name: Percy Test
       - run: npx percy exec -- node percy/percy.js

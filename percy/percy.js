@@ -3,7 +3,10 @@ const percySnapshot = require('@percy/puppeteer');
 const scrollToBottom = require('scroll-to-bottomjs');
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true, args: [
+    `--no-sandbox`
+    `--disable-setuid-sandbox`
+  ]});
 
   const scrollOptions = {
     frequency: 100,

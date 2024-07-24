@@ -15,7 +15,7 @@ const scrollToBottom = require('scroll-to-bottomjs');
 
   // Test Page
   const testPage = await browser.newPage();
-  await testPage.goto('https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/news-release-test-story/');
+  await testPage.goto('https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/colby-announces-recent-faculty-promotions/');
   await new Promise(function (resolve) {
     setTimeout(async function  () {
       await testPage.evaluate(scrollToBottom, scrollOptions);
@@ -53,6 +53,22 @@ const scrollToBottom = require('scroll-to-bottomjs');
       await testPage3.evaluate(scrollToBottom, scrollOptions);
 
       await percySnapshot(testPage3, 'Snapshot of test page 3', {
+        percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
+      });
+      resolve();
+    }, 3000);
+  });
+  
+  // Test Page 4
+  const testPage4 = await browser.newPage();
+  await testPage4.goto(
+    'https://dev-54ta5gq-4nvswumupeimi.us-4.platformsh.site/story/buoyed-by-hope-and-light-class-of-2024-departs-mayflower-hill/'
+  );
+  await new Promise(function (resolve) {
+    setTimeout(async function  () {
+      await testPage4.evaluate(scrollToBottom, scrollOptions);
+
+      await percySnapshot(testPage4, 'Snapshot of test page 4', {
         percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
       });
       resolve();

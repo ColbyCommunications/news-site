@@ -69,7 +69,7 @@ const scrollToBottom = require('scroll-to-bottomjs');
       await testPage4.evaluate(scrollToBottom, scrollOptions);
 
       await percySnapshot(testPage4, 'Snapshot of test page 4', {
-        percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; } .wp-block-embed-youtube {.display: none;}`,
+        percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; } .wp-block-embed-youtube { .display: none; }`,
       });
       resolve();
     }, 3000);

@@ -17,6 +17,7 @@
   "homepage": "https://github.com/ColbyCommunications/news-site#readme",
   "dependencies": {
     "algoliasearch": "^4.13.1",
+    "postcss-selector-parser": "^7.0.0",
     "superagent": "7.0.2"
   },
   "devDependencies": {

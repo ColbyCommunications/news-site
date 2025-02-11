@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4261ae562c035af07cf2c1d1542a0022",
+    "content-hash": "ddad27da5fea1fd74eacfb619f982060",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -242,16 +242,16 @@
         },
         {
             "name": "colbycommunications/wordpress-seo-premium",
-            "version": "21.7",
+            "version": "24.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/wordpress-seo-premium.git",
-                "reference": "aa1574ce14f648fc70935eb4b85c91ea51e81c19"
+                "reference": "513bb26ab4f4e9b7e8db2222025776dbb1cb4117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-aa1574ce14f648fc70935eb4b85c91ea51e81c19-zip-3b34fd.zip",
-                "reference": "aa1574ce14f648fc70935eb4b85c91ea51e81c19"
+                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-513bb26ab4f4e9b7e8db2222025776dbb1cb4117-zip-a141bf.zip",
+                "reference": "513bb26ab4f4e9b7e8db2222025776dbb1cb4117"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -265,7 +265,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-01-03T19:31:12+00:00"
+            "time": "2025-02-11T18:36:55+00:00"
         },
         {
             "name": "colbycommunications/wpseo-news",
@@ -7348,5 +7348,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

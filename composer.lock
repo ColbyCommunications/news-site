@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "793ce6f073d41dc7655162eea3a251bf",
+    "content-hash": "0a329690394c66db47debda4fa01f02c",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -162,11 +162,11 @@
         },
         {
             "name": "colbycommunications/colby-news-theme",
-            "version": "dev-master",
+            "version": "1.9.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "6341f423fff66d3bba925edd12dad2f746b9fe05"
+                "reference": "9a39e9bfbf5d1eab731c349677b8c57a46109581"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -179,7 +179,6 @@
                 "symfony/var-dumper": "^5.4",
                 "wp-coding-standards/wpcs": "^2.3"
             },
-            "default-branch": true,
             "type": "wordpress-theme",
             "extra": {
                 "wordpress-install-dir": "wordpress"
@@ -212,7 +211,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-10-22T14:07:26+00:00"
+            "time": "2025-02-11T17:42:08+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -243,16 +242,16 @@
         },
         {
             "name": "colbycommunications/wordpress-seo-premium",
-            "version": "21.7",
+            "version": "24.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/wordpress-seo-premium.git",
-                "reference": "aa1574ce14f648fc70935eb4b85c91ea51e81c19"
+                "reference": "513bb26ab4f4e9b7e8db2222025776dbb1cb4117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-aa1574ce14f648fc70935eb4b85c91ea51e81c19-zip-3b34fd.zip",
-                "reference": "aa1574ce14f648fc70935eb4b85c91ea51e81c19"
+                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-513bb26ab4f4e9b7e8db2222025776dbb1cb4117-zip-a141bf.zip",
+                "reference": "513bb26ab4f4e9b7e8db2222025776dbb1cb4117"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -266,7 +265,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-01-03T19:31:12+00:00"
+            "time": "2025-02-11T18:36:55+00:00"
         },
         {
             "name": "colbycommunications/wpseo-news",
@@ -2114,16 +2113,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.72.6",
+            "version": "2.73.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonPHP/carbon.git",
-                "reference": "1e9d50601e7035a4c61441a208cb5bed73e108c5"
+                "reference": "9228ce90e1035ff2f0db84b40ec2e023ed802075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/1e9d50601e7035a4c61441a208cb5bed73e108c5",
-                "reference": "1e9d50601e7035a4c61441a208cb5bed73e108c5",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/9228ce90e1035ff2f0db84b40ec2e023ed802075",
+                "reference": "9228ce90e1035ff2f0db84b40ec2e023ed802075",
                 "shasum": ""
             },
             "require": {
@@ -2217,7 +2216,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-27T09:28:11+00:00"
+            "time": "2025-01-08T20:10:23+00:00"
         },
         {
             "name": "newcity/newcity-wp-wysiwyg",
@@ -7250,15 +7249,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "24.3",
+            "version": "24.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/24.3"
+                "reference": "tags/24.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.24.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.24.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -7343,7 +7342,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "colbycommunications/colby-news-theme": 20,
         "newcity/newcity-wp-wysiwyg": 20
     },
     "prefer-stable": false,

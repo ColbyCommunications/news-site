@@ -3,10 +3,10 @@
     "description": "Configuration project for the news.colby.edu site",
     "type": "project",
     "require": {
-        "colbycommunications/colby-news-theme": "dev-master",
+        "colbycommunications/colby-news-theme": "1.9.8",
         "wpackagist-plugin/header-footer": "3.3.0",
         "wpackagist-plugin/duplicate-post": "4.5",
-        "wpackagist-plugin/wordpress-seo": "24.3",
+        "wpackagist-plugin/wordpress-seo": "24.4",
         "wpackagist-plugin/cloudflare": "4.12.8",
         "johnpbloch/wordpress-core": "6.7.1",
         "johnpbloch/wordpress-core-installer": "^2.0",
@@ -33,7 +33,7 @@
         "colbycommunications/colby-ticket": "1.0.1",
         "wpackagist-plugin/wp-search-with-algolia": "2.6.1",
         "vlucas/phpdotenv": "^5.4",
-        "colbycommunications/wordpress-seo-premium": "21.7",
+        "colbycommunications/wordpress-seo-premium": "24.4",
         "colbycommunications/wpseo-news": "13.1"
     },
     "authors": [
@@ -61,8 +61,6 @@
         "installer-paths": {
             "web/wp-content/mu-plugins/{$name}": [
                 "type:wordpress-muplugin",
-                "colbycommunications/wordpress-seo-premium",
-                "colbycommunications/wpseo-news",
                 "wpackagist-plugin/wp-search-with-algolia"
             ],
             "web/wp-content/plugins/{$name}": [

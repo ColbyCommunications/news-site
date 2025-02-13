@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a329690394c66db47debda4fa01f02c",
+    "content-hash": "63053c4660b96ef944da7fd1bb56a7de",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -162,11 +162,11 @@
         },
         {
             "name": "colbycommunications/colby-news-theme",
-            "version": "1.9.8",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "9a39e9bfbf5d1eab731c349677b8c57a46109581"
+                "reference": "52d1d6d93f6ab421ffc31ac0eb86192263950f13"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -211,7 +211,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2025-02-11T17:42:08+00:00"
+            "time": "2025-02-13T16:51:14+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -7342,6 +7342,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "colbycommunications/colby-news-theme": 20,
         "newcity/newcity-wp-wysiwyg": 20
     },
     "prefer-stable": false,

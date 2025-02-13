@@ -20,9 +20,9 @@ services:
     run:
       - "platform self-update -y"
       - "./scripts/setup-mu-plugins.sh"
-      - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
+      # - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo/wp-seo.php /app/web/wp-content/mu-plugins/wp-seo.php
       - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wp-search-with-algolia/algolia.php /app/web/wp-content/mu-plugins/algolia.php
-      - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo-premium/wp-seo-premium.php /app/web/wp-content/mu-plugins/wp-seo-premium.php
+      # - ./scripts/symlink.sh /app/web/wp-content/mu-plugins/wordpress-seo-premium/wp-seo-premium.php /app/web/wp-content/mu-plugins/wp-seo-premium.php
 events:
   post-start:
     # Install composer dependencies

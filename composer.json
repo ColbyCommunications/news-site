@@ -34,7 +34,8 @@
         "wpackagist-plugin/wp-search-with-algolia": "2.6.1",
         "vlucas/phpdotenv": "^5.4",
         "colbycommunications/wordpress-seo-premium": "24.4",
-        "colbycommunications/wpseo-news": "13.1"
+        "colbycommunications/wpseo-news": "13.1",
+        "wpackagist-plugin/disable-everything": "0.4.1"
     },
     "authors": [
         {

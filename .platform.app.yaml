@@ -56,7 +56,6 @@ hooks:
 
 variables:
   env: !include project/platform/variables.env.yaml
-  php:
   php: !include project/site_specific/platform/app.php.yaml
 
 # The configuration of scheduled execution!

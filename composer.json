@@ -68,7 +68,6 @@
         "installer-paths": {
             "web/wp-content/mu-plugins/{$name}": [
                 "type:wordpress-muplugin",
-                "wpackagist-plugin/wordpress-seo",
                 "wpackagist-plugin/wp-search-with-algolia"
             ],
             "web/wp-content/plugins/{$name}": [

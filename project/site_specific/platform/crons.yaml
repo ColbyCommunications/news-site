@@ -1,0 +1,3 @@
+wp_cron:
+  spec: '*/5 * * * *'
+  cmd: wget -q -O - https://news.colby.edu/wp/wp-cron.php?doing_wp_cron

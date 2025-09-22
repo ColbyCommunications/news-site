@@ -7,13 +7,14 @@ shopt -s extglob # Turns on extended globbing
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-## colby news
-cd web/wp-content/themes/colby-news-theme
+printf "Build Colby Theme... \n"
+cd web/wp-content/themes/colby-college-theme
 composer install
 composer dump-autoload
-npm install
-npm run build-prod
+yarn
+yarn scripts:build
 cd -
+
 
 # npm install
 shopt -u extglob

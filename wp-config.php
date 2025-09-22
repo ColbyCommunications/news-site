@@ -80,11 +80,38 @@ if ( false !== $strRelationships = getenv( 'PLATFORM_RELATIONSHIPS' ) ) {
 			echo "This is a multidomain multisite but the primary domain ENV is missing.\n";
 		}
 
-    //we need routes for both multi and standard
-    $aryRoutes = array();//assume we dont have it
-    if (false !== $strRoutes = getenv('PLATFORM_ROUTES')) {
-        $aryRoutes = json_decode(base64_decode($strRoutes), true);
-    }
+		if ( 'master' == getenv( 'PLATFORM_BRANCH' ) ) {
+			//use MULTISITE_PRIMARY_DOMAIN
+			//use the default site_schema of https
+			$site_host = $strPrimaryDomain;
+		} else {
+			//we have to find the correct URL to use
+			//first escape any periods
+			$strLookForDomain = str_replace( '.', '\.', $strPrimaryDomain );
+			$strPattern       = sprintf( '/^https:\/\/(%s[^\/]+)/', $strLookForDomain );
+			$aryMatched       = preg_grep( $strPattern, array_keys( $aryRoutes ) );
+			if ( 1 === count( $aryMatched ) ) {
+				//now we have the _WHOLE_ match, but we need just the domain
+				preg_match( $strPattern, reset( $aryMatched ), $aryMatches );
+				//@todo this assumes 1 exists without checking first
+				$site_host = $aryMatches[1];
+			} else {
+				//@todo throw an error?
+				//echo '<p>I found too many matches for our primary domain:</p><pre>',var_export($aryMatched,true),'</pre>';exit();
+			}
+		}
+	} else {
+		/**
+		 * we'll re-use platform's original code, with some minor modifications. Check whether a route is defined for
+		 * this application in the Platform.sh routes. Use it as the site hostname if so (it is never ideal to trust
+		 * HTTP_HOST).
+		 */
+		$strPlatformAppName = getenv( 'PLATFORM_APPLICATION_NAME' );
+		foreach ( $aryRoutes as $strURL => $aryRoute ) {
+			if ( 'upstream' === $aryRoute['type'] && $aryRoute['upstream'] === $strPlatformAppName ) {
+				// Pick the first hostname, or the first HTTPS hostname if one exists.
+				$strHost   = parse_url( $strURL, PHP_URL_HOST );
+				$strScheme = parse_url( $strURL, PHP_URL_SCHEME );
 
 				if ( false !== $strHost && $strScheme == $site_scheme ) { //i.e. is https
 					$site_host = $strHost;

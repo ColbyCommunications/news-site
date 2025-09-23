@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31ee767d55e88410f45feb52bdb26907",
+    "content-hash": "d538417a2c10ff21e6e56ee710e13ec9",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -3346,7 +3346,6 @@
                 "terminal"
             ],
             "support": {
-
                 "source": "https://github.com/symfony/console/tree/v5.4.47"
             },
             "funding": [
@@ -3356,10 +3355,6 @@
                 },
                 {
                     "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/nicolas-grekas",
                     "type": "github"
                 },
                 {
@@ -4648,10 +4643,6 @@
                 },
                 {
                     "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/nicolas-grekas",
                     "type": "github"
                 },
                 {

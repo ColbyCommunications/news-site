@@ -24,7 +24,7 @@ let siteFull = `https://${site}`;
         setTimeout(async function () {
             await _testPage.evaluate(scrollToBottom, scrollOptions);
 
-            await percySnapshot(_testPage, 'Snapshot of test page', {
+            await percySnapshot(_testPage, 'Snapshot of faculty promotions', {
                 percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
             });
             resolve();

@@ -18,13 +18,13 @@ let siteFull = `https://${site}`;
     };
 
     // Test Page
-    const testPage = await browser.newPage();
-    await testPage.goto(`${siteFull}/story/colby-announces-recent-faculty-promotions/`);
+    const _testPage = await browser.newPage();
+    await _testPage.goto(`${siteFull}/story/colby-announces-recent-faculty-promotions/`);
     await new Promise(function (resolve) {
         setTimeout(async function () {
-            await testPage.evaluate(scrollToBottom, scrollOptions);
+            await _testPage.evaluate(scrollToBottom, scrollOptions);
 
-            await percySnapshot(testPage, 'Snapshot of test page', {
+            await percySnapshot(_testPage, 'Snapshot of test page', {
                 percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; }`,
             });
             resolve();

@@ -1,0 +1,9 @@
+'^/wp-admin$':
+  to: "/wp/wp-admin/"
+  regexp: true
+'^/wp-admin/(.*)':
+  to: "/wp/wp-admin/$1"
+  regexp: true
+'^/colby-magazine/?$':
+  to: 'https://magazine.colby.edu/'
+  regexp: true

@@ -38,6 +38,7 @@ node_modules
 
 # Ignore custom NPM package dir.
 /npm-packages
+/node_modules
 
 # Ignore sql files
 *.sql
@@ -45,3 +46,6 @@ node_modules
 
 # Sage
 web/wp-content/cache
+
+/cypress
+cypress.env.json

@@ -1,0 +1,31 @@
+{
+    "require": {
+        "colbycommunications/wpseo-news": "13.1",
+        "colbycommunications/wordpress-seo-premium": "24.4",
+        "wpackagist-plugin/gallery-block-lightbox": "1.15",
+        "wpackagist-plugin/svg-support": "2.5.8",
+        "wpackagist-plugin/wp-cfm": "1.7.10",
+        "wpackagist-plugin/term-management-tools": "2.0.1",
+        "wpackagist-plugin/convert-to-blocks": "1.3.1",
+        "wpackagist-plugin/admin-bar-in-fullscreen-mode": "1.0.0",
+        "newcity/newcity-wp-wysiwyg": "dev-elementor-compatible",
+        "wpackagist-plugin/accordion-blocks": "1.5.0",
+        "wpackagist-plugin/acf-autosize": "2.0.15",
+        "wpackagist-plugin/acf-extended": "0.9.1",
+        "colbycommunications/colby-news-theme": "1.9.10",
+        "wpackagist-plugin/reusable-blocks-extended": "0.9.1",
+        "wpackagist-plugin/disable-everything": "0.4.1",
+        "wpackagist-plugin/block-manager": "3.1.0"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/ColbyCommunications/colby-news-theme"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "web/wp-content/mu-plugins/{$name}": ["wpackagist-plugin/wp-search-with-algolia"]
+        }
+    }
+}

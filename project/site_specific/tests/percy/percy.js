@@ -109,5 +109,19 @@ let siteFull = `https://${site}`;
 
     await percySnapshot(newsletterPage, 'Snapshot of newsletter page');
 
+    // release page
+    const releasePage = await browser.newPage();
+    await releasePage.goto(`${siteFull}/story/test-page/`);
+    await new Promise(function (resolve) {
+        setTimeout(async function () {
+            await releasePage.evaluate(scrollToBottom, scrollOptions);
+
+            await percySnapshot(releasePage, 'Snapshot of release page', {
+                percyCSS: `.relatedSection { display:none; } .highlightsSection { display: none; } .read-time { display: none; } .wp-block-embed-youtube { .display: none; }`,
+            });
+            resolve();
+        }, 3000);
+    });
+
     await browser.close();
 })();

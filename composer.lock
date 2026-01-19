@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b27dcd0ae51b330b8f22182f11a32f5",
+    "content-hash": "59e87bca82400352733366a8ded5402d",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -438,16 +438,16 @@
         },
         {
             "name": "colbycommunications/wordpress-seo-premium",
-            "version": "24.4",
+            "version": "26.7",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/wordpress-seo-premium.git",
-                "reference": "513bb26ab4f4e9b7e8db2222025776dbb1cb4117"
+                "reference": "703c59d27ab6c33322026e0b956394213f08eceb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-513bb26ab4f4e9b7e8db2222025776dbb1cb4117-zip-a141bf.zip",
-                "reference": "513bb26ab4f4e9b7e8db2222025776dbb1cb4117"
+                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-703c59d27ab6c33322026e0b956394213f08eceb-zip-80bbec.zip",
+                "reference": "703c59d27ab6c33322026e0b956394213f08eceb"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -461,20 +461,20 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2025-02-11T18:36:55+00:00"
+            "time": "2026-01-19T21:51:44+00:00"
         },
         {
             "name": "colbycommunications/wpseo-news",
-            "version": "13.1",
+            "version": "13.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/wpseo-news.git",
-                "reference": "73006cdd8bb544dc629708329cd376bfa6382056"
+                "reference": "01643c121d5aadda74afa2037ef1afc0d22c287d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/wpseo-news/colbycommunications-wpseo-news-73006cdd8bb544dc629708329cd376bfa6382056-zip-10ab0a.zip",
-                "reference": "73006cdd8bb544dc629708329cd376bfa6382056"
+                "url": "https://satis.colby.edu/dist/colbycommunications/wpseo-news/colbycommunications-wpseo-news-01643c121d5aadda74afa2037ef1afc0d22c287d-zip-6f7ac0.zip",
+                "reference": "01643c121d5aadda74afa2037ef1afc0d22c287d"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -488,7 +488,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2023-05-11T14:46:25+00:00"
+            "time": "2026-01-19T21:53:01+00:00"
         },
         {
             "name": "composer/ca-bundle",

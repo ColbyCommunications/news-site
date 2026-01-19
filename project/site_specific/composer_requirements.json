@@ -1,7 +1,7 @@
 {
     "require": {
-        "colbycommunications/wpseo-news": "13.1",
-        "colbycommunications/wordpress-seo-premium": "24.4",
+        "colbycommunications/wpseo-news": "13.3",
+        "colbycommunications/wordpress-seo-premium": "26.7",
         "wpackagist-plugin/gallery-block-lightbox": "1.16",
         "wpackagist-plugin/svg-support": "2.5.14",
         "wpackagist-plugin/wp-cfm": "1.7.10",

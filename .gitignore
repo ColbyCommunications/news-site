@@ -15,6 +15,7 @@ node_modules
 /web/wp-content/plugins/*
 !/web/wp-content/plugins/index.php
 !/web/wp-content/plugins/README.md
+!/web/wp-content/plugins/cludo-wordpress
 /web/wp-content/languages/*
 !/web/wp-content/languages/index.php
 !/web/wp-content/languages/README.md

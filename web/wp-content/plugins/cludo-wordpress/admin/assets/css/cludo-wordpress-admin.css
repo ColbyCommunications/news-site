@@ -1,0 +1,203 @@
+/* General brand and niceness */
+#wpwrap::before {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../img/r-background.svg) repeat;
+	opacity: .5;
+}
+
+.cludo__brand {
+	margin: 1.5rem 0 .75rem 0;
+	display: block;
+	font-style: italic;
+	color: #777;
+}
+
+.cludo__brand a {
+	color: inherit;
+}
+
+.cludo__logo {
+	display: block;
+	margin: .25rem 0;
+}
+
+.cludo__logo img {
+	max-width: 120px;
+}
+
+/* messages */
+.cludo__info {
+	color: #909090;
+	display: block;
+}
+
+.cludo__success {
+	color: #4caf50;
+	display: block;
+}
+
+.cludo__warning {
+	color: #b00000;
+	display: block;
+}
+
+/* Connection info */
+.cludo__connection {
+	color: #b00000;
+	margin-top: .5em;
+}
+
+.cludo__connection.active {
+	color: #4caf50;
+}
+
+/* Tab content */
+.cludo__option_page {
+	max-width: 800px;
+	padding: 0 20px 0 0;
+}
+
+.cludo__option_page_tab {
+	display: none;
+}
+
+/* Input rows */
+.cludo__input_desc {
+	display: block;
+	margin-top: .25rem;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.cludo__option_page label.title {
+	font-size: 1.2em;
+}
+
+.form-table tr {
+	vertical-align: top;
+}
+
+.form-table.checkbox .form-table__input > div {
+	display: flex;
+	align-content: center;
+}
+
+.form-table.checkbox .form-table__input input {
+	margin-top: 5px;
+}
+
+/* Input textarea */
+.cludo__option_page textarea {
+	min-height: 250px;
+}
+
+/* Debug log */
+.form-table .html-debug_log_display {
+	max-height: 700px;
+	max-width: 500px;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	width: 100%;
+	background: #fff;
+	padding: .5em;
+	border: 1px solid #f1f1f1;
+	box-sizing: border-box;
+	font-size: 12px !important;
+	font-family: monospace;
+}
+
+.form-table .html-debug_log_display p {
+	font-size: inherit !important;
+}
+
+.form-table.debug_log_display .form-table__input {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* Field title */
+.cludo__settings-field-title {
+	margin-top: 2em;
+}
+
+/* Mapping table */
+table.cludo__matrix-table {
+	margin: 1em 0;
+	background-color: white;
+	border-collapse: collapse;
+	background-color: #f3f3f3;
+	border: 1px solid #e3e3e3;
+	width: 620px;
+}
+.cludo__matrix-table tr:nth-child(odd){
+	background-color: #ececec;
+}
+.cludo__matrix-table td:not(:last-child){
+	border-right: 1px solid #e3e3e3;
+}
+.cludo__matrix-table td, .cludo__matrix-table th {
+	padding: 1em;
+}
+.cludo__matrix-table__type {
+	min-width: 150px;
+	text-align: right;
+}
+.cludo__matrix-table__index {
+	width: 100px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/* crawlers */
+.cludo__crawler-info .cludo__crawler__configure {
+	text-decoration: none;
+	font-size: 12px;
+	margin-left: .33em;
+}
+.cludo__crawler__configure .dashicons {
+	font-size: 12px;
+	vertical-align: unset;
+	width: 16px;
+}
+.cludo__crawler__configure__label {
+	visibility: hidden;
+}
+.cludo__crawler-info li:hover .cludo__crawler__configure__label {
+	visibility: visible;
+}
+.cludo__crawler-info li {
+	margin-bottom: 1em;
+	font-size: 90%;
+}
+.cludo__crawler-info h4 {
+	margin-bottom: 0;
+	margin-top: 0;
+	font-size: 110%;
+}
+
+/* debug log */
+.cludo__debug-log {
+	background-color: white;
+	border: 1px solid #ccc;
+
+	font-family: ui-monospace,
+	Menlo, Monaco,
+	"Cascadia Mono", "Segoe UI Mono",
+	"Roboto Mono",
+	"Oxygen Mono",
+	"Ubuntu Monospace",
+	"Source Code Pro",
+	"Fira Mono",
+	"Droid Sans Mono",
+	"Courier New", monospace;
+
+	max-width: max(70vw, 600px);
+	max-height: 80vh;
+	overflow: scroll;
+	font-size: 10px;
+}

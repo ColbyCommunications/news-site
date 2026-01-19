@@ -7,6 +7,7 @@ env:
   ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
   ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+  WEBMASTER_GITHUB_ACTIONS_TOKEN: ${{ secrets.WEBMASTER_GITHUB_ACTIONS_TOKEN }}
 jobs:
   scrape_youtube:
     runs-on: ubuntu-latest

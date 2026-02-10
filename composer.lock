@@ -284,20 +284,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-cludo",
-                "reference": "08b975eb5136a791ed698883de885cb240ed88c7"
+                "reference": "10a9c5c1cbd26433e22c107acfbd2b5b1ed6b99d"
             },
             "require": {
                 "php": ">=7.4"
             },
             "default-branch": true,
             "type": "wordpress-plugin",
-            "autoload": {
-                "psr-4": {
-                    "ColbyCludo\\API\\": "api/",
-                    "ColbyCludo\\CLI\\": "cli/",
-                    "ColbyCludo\\Utils\\": "utils/"
-                }
-            },
             "license": [
                 "MIT"
             ],
@@ -308,7 +301,7 @@
                     "role": "Plugin author"
                 }
             ],
-            "time": "2026-02-10T15:09:52+00:00"
+            "time": "2026-02-10T16:22:44+00:00"
         },
         {
             "name": "colbycommunications/colby-college-theme",

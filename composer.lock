@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea4d8cdb26db8018476aface3557f3ec",
+    "content-hash": "eae9a99772f8491163507f7605abaeab",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -277,31 +277,6 @@
                 }
             ],
             "time": "2025-06-27T16:42:10+00:00"
-        },
-        {
-            "name": "colbycommunications/colby-cludo",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ColbyCommunications/colby-cludo",
-                "reference": "10a9c5c1cbd26433e22c107acfbd2b5b1ed6b99d"
-            },
-            "require": {
-                "php": ">=7.4"
-            },
-            "default-branch": true,
-            "type": "wordpress-plugin",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Giovanni Aceto",
-                    "email": "gaceto@colby.edu",
-                    "role": "Plugin author"
-                }
-            ],
-            "time": "2026-02-10T16:22:44+00:00"
         },
         {
             "name": "colbycommunications/colby-college-theme",
@@ -7836,7 +7811,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "colbycommunications/colby-cludo": 20,
         "newcity/newcity-wp-wysiwyg": 20,
         "colbycommunications/colby-news-theme": 20
     },

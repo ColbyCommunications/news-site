@@ -14,6 +14,7 @@
         "wp-cli/wp-cli-bundle": "^2.4",
         "psy/psysh": "^0.10.4",
         "colbycommunications/advanced-custom-fields-pro": "6.4.2",
+        "colbycommunications/colby-cludo": "dev-master",
         "colbycommunications/gravityforms": "2.9.11",
         "colbycommunications/colby-ticket": "^1.0.0",
         "wpackagist-plugin/wp-search-with-algolia": "2.10.1",
@@ -65,6 +66,10 @@
         {
             "type": "git",
             "url": "https://github.com/ColbyCommunications/colby-college-theme"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/ColbyCommunications/colby-cludo"
         }
     ],
     "extra": {

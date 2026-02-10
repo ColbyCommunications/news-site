@@ -9,16 +9,13 @@ $dotenv->load();
 define( 'PLATFORM_VARIABLES', json_decode( $_ENV['PLATFORM_VARS'], true ) );
 
 // Set host values
+$site_scheme      = 'http';
+$site_host        = 'localhost';
 $strDomainRequest = 'SERVER_NAME';
-$site_scheme = 'https';
-$site_host   = 'news.lndo.site'; // default fallback for CLI
 
-if ( ! empty($_SERVER['HTTP_HOST']) ) {
-    $site_host = $_SERVER['HTTP_HOST'];
-}
-
-if ( ! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ) {
-    $site_scheme = 'https';
+if ( isset( $_SERVER['HTTP_HOST'] ) ) {
+	$site_host   = $_SERVER['HTTP_HOST'];
+	$site_scheme = ! empty( $_SERVER['https'] ) ? 'https' : 'http';
 }
 
 

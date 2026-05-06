@@ -308,7 +308,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-news-theme",
-                "reference": "c99590e55b2e68c518164378ed2523ea1506ec0a"
+                "reference": "818f08177eb65160302700dc9ba06e32480feba3"
             },
             "require": {
                 "gbuckingham89/youtube-rss-parser": "^0.4.0",
@@ -353,7 +353,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2026-04-01T15:14:17+00:00"
+            "time": "2026-05-06T19:17:32+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -7806,5 +7806,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

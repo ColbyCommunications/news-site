@@ -7,3 +7,8 @@
 '^/colby-magazine/?$':
   to: 'https://magazine.colby.edu/'
   regexp: true
+  code: 301
+'^/oyster/?$':
+  to: 'https://www.youtube.com/watch?v=FzYVovKafZI'
+  regexp: true
+  code: 301

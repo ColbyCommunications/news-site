@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5be394d1e5ef7cb2600c4643972c316b",
+    "content-hash": "099e834ccac7db28bd6560e6a09dd88d",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -458,16 +458,16 @@
         },
         {
             "name": "colbycommunications/wordpress-seo-premium",
-            "version": "26.7",
+            "version": "27.8",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/wordpress-seo-premium.git",
-                "reference": "703c59d27ab6c33322026e0b956394213f08eceb"
+                "reference": "e748fe3182e211065059559b9b785837bbaf776f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-703c59d27ab6c33322026e0b956394213f08eceb-zip-80bbec.zip",
-                "reference": "703c59d27ab6c33322026e0b956394213f08eceb"
+                "url": "https://satis.colby.edu/dist/colbycommunications/wordpress-seo-premium/colbycommunications-wordpress-seo-premium-e748fe3182e211065059559b9b785837bbaf776f-zip-20e8e9.zip",
+                "reference": "e748fe3182e211065059559b9b785837bbaf776f"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -482,10 +482,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/ColbyCommunications/wordpress-seo-premium/tree/26.7",
+                "source": "https://github.com/ColbyCommunications/wordpress-seo-premium/tree/27.8",
                 "issues": "https://github.com/ColbyCommunications/wordpress-seo-premium/issues"
             },
-            "time": "2026-01-19T21:51:44+00:00"
+            "time": "2026-06-11T14:55:55+00:00"
         },
         {
             "name": "colbycommunications/wpseo-news",

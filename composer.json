@@ -7,7 +7,7 @@
         "johnpbloch/wordpress-core": "7.0.0",
         "wpackagist-plugin/header-footer": "3.3.6",
         "wpackagist-plugin/duplicate-post": "4.6",
-        "wpackagist-plugin/wordpress-seo": "27.8",
+        "wpackagist-plugin/wordpress-seo": "27.7",
         "wpackagist-plugin/cloudflare": "4.14.3",
         "wpackagist-plugin/public-post-preview": "3.1.0",
         "wpackagist-plugin/wp-saml-auth": "2.3.2",
@@ -39,7 +39,7 @@
         "wpackagist-plugin/accordion-blocks": "1.5.0",
         "wpackagist-plugin/acf-autosize": "2.0.15",
         "wpackagist-plugin/acf-extended": "0.9.1",
-        "colbycommunications/colby-news-theme": "1.10.4",
+        "colbycommunications/colby-news-theme": "dev-accessibility-2026",
         "wpackagist-plugin/reusable-blocks-extended": "0.9.1",
         "wpackagist-plugin/disable-everything": "0.4.1",
         "wpackagist-plugin/block-manager": "3.2.1"

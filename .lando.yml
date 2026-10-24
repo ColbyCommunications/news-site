@@ -15,6 +15,17 @@ services:
   database:
     image: mysql:5.7
     platform: linux/amd64
+  node:
+    type: node:20
+    overrides:
+      working_dir: /app/web/wp-content/themes/colby-college-theme-inertia
+    ports:
+      - 5173
+    environment:
+      CHOKIDAR_USEPOLLING: "1"
+      WATCHPACK_POLLING: "true"
+      VITE_FORCE_POLLING: "1"
+    command: "npm ci && npm run dev -- --host 0.0.0.0 --port 5173"
   appserver:
     type: php:8.3
     build:
@@ -40,3 +51,12 @@ events:
 # proxy:
 #    appserver_nginx:
 #        - site.colby.edu
+tooling:
+  npm:
+    service: node
+  npx:
+    service: node
+
+proxy:
+  node:
+    - vite.lndo.site:5173

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9682ee092b1893dd98182d25fb48173d",
+    "content-hash": "b8299435457abc09daf3b5a47b4ac620",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -8027,15 +8027,15 @@
         },
         {
             "name": "wpackagist-plugin/svg-support",
-            "version": "2.5.16",
+            "version": "2.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/svg-support/",
-                "reference": "tags/2.5.16"
+                "reference": "tags/2.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/svg-support.2.5.16.zip"
+                "url": "https://downloads.wordpress.org/plugin/svg-support.2.6.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
